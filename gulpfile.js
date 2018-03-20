@@ -8,11 +8,23 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var autoprefixer = require("gulp-autoprefixer");
 var cssBase64 = require('gulp-css-base64');
+var browserSync = require('browser-sync');
+
+
+gulp.task('browserSync', function() {
+  browserSync({
+    server: {
+      baseDir: './'
+    }
+  })
+});
 
 
 gulp.task('css', function () {
     return gulp.src('assets/scss/**/*.scss')
-            .pipe(sass().on('error', function (error) {
+            .pipe(sass({
+                includePaths: require('node-normalize-scss').includePaths
+            }).on('error', function (error) {
                 console.log(error);
             }))
             .pipe(cssBase64({
@@ -20,7 +32,11 @@ gulp.task('css', function () {
                 extensionsAllowed: ['.gif', '.jpg', '.png']
             }))
             .pipe(autoprefixer(['last 2 versions', '> 1%', 'ie 8', 'ie 7', 'iOS >= 8', 'Safari >= 8']))
-            .pipe(gulp.dest('assets/css'));
+            .pipe(gulp.dest('assets/css'))
+            .pipe(browserSync.reload({
+                stream: true
+            }))
+            ;
 });
 
 gulp.task('default', function () {
@@ -28,6 +44,6 @@ gulp.task('default', function () {
 });
 
 
-gulp.task('watch', function () {
+gulp.task('watch',["browserSync"], function () {
     gulp.watch('assets/scss/**/*.scss', ['css']);
 });

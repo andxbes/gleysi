@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 17.03.2018, 19:49:44
+    Author     : Andrey
+*/
+
+
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+    @include border-box;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+    height: auto !important; 
+}   
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+     @extend %clearfix;
+     padding-left: $grid-padding;
+     padding-right: $grid-padding;
+}
+
+.row {
+    @extend %clearfix;
+    margin-left: -$grid-padding;
+    margin-right: -$grid-padding;
+}
+
+
+[class*='col-'] {
+    float: left;
+    padding: $grid-padding;
+    width: 100%;
+    min-height: 1px; 
+}   
+
+
+
+.container {      
+    width: 100%;
+    margin: 0 auto;
+    max-width: $grid-max-width;     
+}
+@for $i from 1 through $grid-columns {      
+    .col-lg-#{$i} {         
+        width: 100% / $grid-columns * $i;   
+    }           
+}   
+
+
+
+@media #{$breakpoint-medium} {
+    .container {      
+        width: 100%;
+        margin: 0 auto;
+        max-width: $grid-max-width;     
+    }
+    @for $i from 1 through $grid-columns {      
+        .col-#{$i} {         
+            width: 100% / $grid-columns * $i;   
+        }           
+    }   
+}

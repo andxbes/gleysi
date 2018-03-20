@@ -7,7 +7,17 @@ and open the template in the editor.
     Created on : 03.03.2018, 12:15:34
     Author     : Andrey
 */
+@import "../../node_modules/node-normalize-scss/_normalize.scss";
+
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_greed.scss";
+
+
+
 body{
     font-size: 16px;
+    background-color: $color-background-primary;
+    
 }
 

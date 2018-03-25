@@ -31,7 +31,7 @@ gulp.task('css', function () {
             )
             .pipe(cssBase64({
                 maxWeightResource: 4000,
-                extensionsAllowed: ['.gif', '.jpg', '.png']
+                extensionsAllowed: ['.gif', '.jpg', '.png','.svg']
             }))
             .pipe(autoprefixer(['last 2 versions', '> 1%', 'ie 8', 'ie 7', 'iOS >= 8', 'Safari >= 8']))
             .pipe(gulp.dest('assets/css'))

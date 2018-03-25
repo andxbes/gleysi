@@ -23,7 +23,7 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body, .main-navigation .menu > li {
+body, .head__navigation .menu > li {
   margin: 0; }
 
 /**
@@ -442,12 +442,12 @@ and open the template in the editor.
     Created on : 17.03.2018, 19:49:54
     Author     : Andrey
 */
-.container, .row {
+.container, .row, .header .user-block {
   *zoom: 1; }
-  .container:before, .row:before, .container:after, .row:after {
+  .container:before, .row:before, .header .user-block:before, .container:after, .row:after, .header .user-block:after {
     content: " ";
     display: table; }
-  .container:after, .row:after {
+  .container:after, .row:after, .header .user-block:after {
     clear: both; }
 
 /*
@@ -850,32 +850,72 @@ img {
 .hidden {
   display: none; }
 
-.main-navigation {
-  padding: 14px 6px; }
-  .main-navigation ul {
+.c-btn, .c-btn--with-text {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 32px;
+  min-height: 32px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 22px; }
+  .c-btn .ico, .c-btn--with-text .ico {
+    line-height: 0;
+    fill: white; }
+  .c-btn:hover, .c-btn--with-text:hover {
+    background-color: #fff; }
+    .c-btn:hover .ico, .c-btn--with-text:hover .ico {
+      fill: #000; }
+    .c-btn:hover .text, .c-btn--with-text:hover .text {
+      color: #000; }
+
+.c-btn--with-text {
+  padding: 0 17px;
+  -webkit-box-pack: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left; }
+  .c-btn--with-text .ico {
+    margin-right: 7px; }
+  .c-btn--with-text .text {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: normal; }
+
+.head__navigation {
+  padding: 14px 6px 10px; }
+  .head__navigation ul {
     list-style: none; }
-  .main-navigation .menu {
+  .head__navigation .menu {
     font-size: 0;
     position: relative; }
-    .main-navigation .menu > li {
+    .head__navigation .menu > li {
       display: inline-block;
       padding: 0 1px;
       padding-bottom: 6px; }
-      .main-navigation .menu > li:hover .menu__sub {
+      .head__navigation .menu > li:hover .menu__sub {
         display: block; }
-      .main-navigation .menu > li:hover > a {
+      .head__navigation .menu > li:hover > a {
         background-color: white;
         color: #323232; }
-      .main-navigation .menu > li > a:active {
+      .head__navigation .menu > li > a:active {
         -webkit-box-shadow: inset 0 2px 1px #696969;
                 box-shadow: inset 0 2px 1px #696969;
         background-color: #ededed; }
-      .main-navigation .menu > li > a {
+      .head__navigation .menu > li > a {
         border-radius: 16px; }
-      .main-navigation .menu > li.curent {
+      .head__navigation .menu > li.curent {
         background-color: #d07058;
         color: #fff; }
-    .main-navigation .menu a {
+    .head__navigation .menu a {
       display: inline-block;
       text-decoration: none;
       color: white;
@@ -883,7 +923,7 @@ img {
       padding: 6px 13px 7px;
       -webkit-transition: all 0.2s ease;
       transition: all 0.2s ease; }
-    .main-navigation .menu__sub {
+    .head__navigation .menu__sub {
       display: none;
       padding: 9px 0 6px;
       background-color: white;
@@ -898,27 +938,70 @@ img {
       line-height: 16px;
       -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
               box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4); }
-      .main-navigation .menu__sub li {
+      .head__navigation .menu__sub li {
         padding: 0 7px; }
-        .main-navigation .menu__sub li:hover {
+        .head__navigation .menu__sub li:hover {
           background-color: #fbded7; }
-        .main-navigation .menu__sub li:active {
+        .head__navigation .menu__sub li:active {
           background-color: #f6b5a5; }
-        .main-navigation .menu__sub li.curent a {
+        .head__navigation .menu__sub li.curent a {
           background-color: #d07058;
           color: #fff; }
-        .main-navigation .menu__sub li.title {
+        .head__navigation .menu__sub li.title {
           padding: 0 20px 13px;
           border-bottom: 1px solid #d1d0ce;
           margin-bottom: 2px;
           background-color: inherit; }
-      .main-navigation .menu__sub a {
+      .head__navigation .menu__sub a {
         color: inherit;
         font-weight: normal; }
 
-.main-header {
+.header {
   padding-top: 10px;
   padding-bottom: 10px; }
+  .header .logo {
+    fill: white; }
+    .header .logo:hover {
+      opacity: 0.8; }
+  .header .user-block {
+    padding-left: 12px; }
+    .header .user-block > * {
+      margin: 12px 5px;
+      float: left; }
+
+.search {
+  min-width: 32px; }
+
+.login {
+  min-width: 94px; }
+
+.cart {
+  min-width: 117px; }
+  .cart .ico__place {
+    fill: transparent; }
+  .cart.cart-not-empty {
+    background-color: #fff;
+    color: #000; }
+    .cart.cart-not-empty .ico {
+      fill: #000; }
+    .cart.cart-not-empty .ico__place {
+      fill: #E84D37; }
+
+.contacts {
+  padding-top: 0px;
+  font-weight: bold; }
+  .contacts__time {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 4px;
+    word-spacing: 0.5px; }
+  .contacts__phone {
+    font-size: 22px;
+    line-height: 24px;
+    text-decoration: none;
+    color: white; }
+    .contacts__phone:hover {
+      opacity: 0.8; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -929,7 +1012,7 @@ and open the template in the editor.
     Created on : 25.03.2018, 11:13:39
     Author     : Andrey
 */
-body, .main-navigation .menu > li {
+body, .head__navigation .menu > li {
   font-family: Roboto;
   font-weight: normal;
   font-size: 16px;

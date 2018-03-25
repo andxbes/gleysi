@@ -1,18 +1,74 @@
 
 
-.main-header{
+.header{
     padding-top: 10px;
     padding-bottom: 10px;
-    
-    .user-block{
-        .search{
-           
+
+    .logo{
+        fill:white;
+        &:hover{
+            opacity: 0.8;
         }
-        
     }
-    
+
+    .user-block{
+        padding-left: 12px;
+        
+        @extend %clearfix;
+        &>*{
+            margin: 12px 5px;
+            float:left;
+        }
+    }
+
 }
 
 .search{
+    min-width: 32px;
+}
+
+.login{
+    min-width: 94px;
+}
+
+.cart {
+    min-width: 117px;
+    .ico__place{
+
+        fill: rgba(0,0,0,0);
+
+    }
+    &.cart-not-empty{
+         background-color: #fff;
+         color:#000;
+        .ico{
+            fill: #000;
+        }
+        
+        .ico__place{
+            fill: #E84D37;
+        }
+    }
+
+}
+
+.contacts {
+    padding-top: 0px;
+    font-weight: bold;
+    &__time{
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 4px;
+        word-spacing: 0.5px;
+    }
+    &__phone{
+        font-size: 22px;
+        line-height: 24px;
+        text-decoration: none;
+        color: white;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
     
 }

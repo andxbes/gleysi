@@ -1,2 +1,39 @@
+.c-btn{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 32px;
+    min-height: 32px;
+
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 22px;
+    .ico{
+        line-height: 0;
+        fill: white;
+    }
+    &:hover{
+        background-color: #fff;
+        .ico{
+
+            fill:#000;
+        }
+        .text{
+            color: #000;
+        }
+    }  
+}
+.c-btn--with-text{
+    @extend .c-btn;
+    padding: 0 17px ;
+    justify-content: left;
+    .ico{
+        margin-right: 7px;
+    }
+    .text{
+        font-size: 14px;
+        line-height: 16px;
+        font-weight: normal;
+    }
+}
 

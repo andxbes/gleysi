@@ -1,22 +1,32 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
+
 /* 
     Created on : 03.03.2018, 12:15:34
     Author     : Andrey
 */
 @import "../../node_modules/node-normalize-scss/_normalize.scss";
 
+@import "_typography.scss";
 @import "_variables.scss";
 @import "_mixins.scss";
+@import "tpl/_tpl.scss";
 @import "_greed.scss";
+@import "_buttons.scss";
+@import "_menues.scss";
+
+@import "_header.scss";
+
+
+@import "_footer.scss";
+
 
 
 
 body{
+    font-family: Roboto;
+    font-weight: normal;
     font-size: 16px;
+    line-height: 22px;
+    color: white;
     background-color: $color-background-primary;
     
 }

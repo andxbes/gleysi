@@ -24,9 +24,11 @@ gulp.task('css', function () {
     return gulp.src('assets/scss/**/*.scss')
             .pipe(sass({
                 includePaths: require('node-normalize-scss').includePaths
-            }).on('error', function (error) {
-                console.log(error);
-            }))
+            })
+//            .on('error', function (error) {
+//                console.log(error);
+//            })
+            )
             .pipe(cssBase64({
                 maxWeightResource: 4000,
                 extensionsAllowed: ['.gif', '.jpg', '.png']

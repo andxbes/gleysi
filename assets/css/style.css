@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 03.03.2018, 12:15:34
     Author     : Andrey
@@ -28,7 +23,7 @@ html {
 /**
  * Remove the margin in all browsers (opinionated).
  */
-body {
+body, .main-navigation .menu > li {
   margin: 0; }
 
 /**
@@ -402,15 +397,42 @@ template {
 [hidden] {
   display: none; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 17.03.2018, 19:50:29
-    Author     : Andrey
-*/
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto.woff2") format("woff2"), url("../fonts/roboto.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/robotomedium.woff2") format("woff2"), url("../fonts/robotomedium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/robotobold.woff2") format("woff2"), url("../fonts/robotobold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+.text-bold {
+  font-weight: bold; }
+
+.text-normal {
+  font-weight: normal; }
+
+.text-light {
+  font-weight: 300; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -434,7 +456,7 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : 17.03.2018, 19:49:44
+    Created on : 21.03.2018, 21:45:19
     Author     : Andrey
 */
 *, *:after, *:before {
@@ -460,9 +482,15 @@ img {
   margin-left: -13px;
   margin-right: -13px; }
 
+.pull-left {
+  float: left !important; }
+
+.pull-right {
+  float: right !important; }
+
 [class*='col-'] {
   float: left;
-  padding: 13px;
+  padding: 0 13px;
   width: 100%;
   min-height: 1px; }
 
@@ -471,132 +499,440 @@ img {
   margin: 0 auto;
   max-width: 1200px; }
 
-.col-lg-1 {
+.col-sm-1 {
+  width: 2.08333%; }
+
+.col-sm-2 {
   width: 4.16667%; }
 
-.col-lg-2 {
+.col-sm-3 {
+  width: 6.25%; }
+
+.col-sm-4 {
   width: 8.33333%; }
 
-.col-lg-3 {
+.col-sm-5 {
+  width: 10.41667%; }
+
+.col-sm-6 {
   width: 12.5%; }
 
-.col-lg-4 {
+.col-sm-7 {
+  width: 14.58333%; }
+
+.col-sm-8 {
   width: 16.66667%; }
 
-.col-lg-5 {
+.col-sm-9 {
+  width: 18.75%; }
+
+.col-sm-10 {
   width: 20.83333%; }
 
-.col-lg-6 {
+.col-sm-11 {
+  width: 22.91667%; }
+
+.col-sm-12 {
   width: 25%; }
 
-.col-lg-7 {
+.col-sm-13 {
+  width: 27.08333%; }
+
+.col-sm-14 {
   width: 29.16667%; }
 
-.col-lg-8 {
+.col-sm-15 {
+  width: 31.25%; }
+
+.col-sm-16 {
   width: 33.33333%; }
 
-.col-lg-9 {
+.col-sm-17 {
+  width: 35.41667%; }
+
+.col-sm-18 {
   width: 37.5%; }
 
-.col-lg-10 {
+.col-sm-19 {
+  width: 39.58333%; }
+
+.col-sm-20 {
   width: 41.66667%; }
 
-.col-lg-11 {
+.col-sm-21 {
+  width: 43.75%; }
+
+.col-sm-22 {
   width: 45.83333%; }
 
-.col-lg-12 {
+.col-sm-23 {
+  width: 47.91667%; }
+
+.col-sm-24 {
   width: 50%; }
 
-.col-lg-13 {
+.col-sm-25 {
+  width: 52.08333%; }
+
+.col-sm-26 {
   width: 54.16667%; }
 
-.col-lg-14 {
+.col-sm-27 {
+  width: 56.25%; }
+
+.col-sm-28 {
   width: 58.33333%; }
 
-.col-lg-15 {
+.col-sm-29 {
+  width: 60.41667%; }
+
+.col-sm-30 {
   width: 62.5%; }
 
-.col-lg-16 {
+.col-sm-31 {
+  width: 64.58333%; }
+
+.col-sm-32 {
   width: 66.66667%; }
 
-.col-lg-17 {
+.col-sm-33 {
+  width: 68.75%; }
+
+.col-sm-34 {
   width: 70.83333%; }
 
-.col-lg-18 {
+.col-sm-35 {
+  width: 72.91667%; }
+
+.col-sm-36 {
   width: 75%; }
 
-.col-lg-19 {
+.col-sm-37 {
+  width: 77.08333%; }
+
+.col-sm-38 {
   width: 79.16667%; }
 
-.col-lg-20 {
+.col-sm-39 {
+  width: 81.25%; }
+
+.col-sm-40 {
   width: 83.33333%; }
 
-.col-lg-21 {
+.col-sm-41 {
+  width: 85.41667%; }
+
+.col-sm-42 {
   width: 87.5%; }
 
-.col-lg-22 {
+.col-sm-43 {
+  width: 89.58333%; }
+
+.col-sm-44 {
   width: 91.66667%; }
 
-.col-lg-23 {
+.col-sm-45 {
+  width: 93.75%; }
+
+.col-sm-46 {
   width: 95.83333%; }
 
-.col-lg-24 {
+.col-sm-47 {
+  width: 97.91667%; }
+
+.col-sm-48 {
   width: 100%; }
+
+@media only screen and (min-width: 460px) {
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px; }
+  .col-md-1 {
+    width: 2.08333%; }
+  .col-md-2 {
+    width: 4.16667%; }
+  .col-md-3 {
+    width: 6.25%; }
+  .col-md-4 {
+    width: 8.33333%; }
+  .col-md-5 {
+    width: 10.41667%; }
+  .col-md-6 {
+    width: 12.5%; }
+  .col-md-7 {
+    width: 14.58333%; }
+  .col-md-8 {
+    width: 16.66667%; }
+  .col-md-9 {
+    width: 18.75%; }
+  .col-md-10 {
+    width: 20.83333%; }
+  .col-md-11 {
+    width: 22.91667%; }
+  .col-md-12 {
+    width: 25%; }
+  .col-md-13 {
+    width: 27.08333%; }
+  .col-md-14 {
+    width: 29.16667%; }
+  .col-md-15 {
+    width: 31.25%; }
+  .col-md-16 {
+    width: 33.33333%; }
+  .col-md-17 {
+    width: 35.41667%; }
+  .col-md-18 {
+    width: 37.5%; }
+  .col-md-19 {
+    width: 39.58333%; }
+  .col-md-20 {
+    width: 41.66667%; }
+  .col-md-21 {
+    width: 43.75%; }
+  .col-md-22 {
+    width: 45.83333%; }
+  .col-md-23 {
+    width: 47.91667%; }
+  .col-md-24 {
+    width: 50%; }
+  .col-md-25 {
+    width: 52.08333%; }
+  .col-md-26 {
+    width: 54.16667%; }
+  .col-md-27 {
+    width: 56.25%; }
+  .col-md-28 {
+    width: 58.33333%; }
+  .col-md-29 {
+    width: 60.41667%; }
+  .col-md-30 {
+    width: 62.5%; }
+  .col-md-31 {
+    width: 64.58333%; }
+  .col-md-32 {
+    width: 66.66667%; }
+  .col-md-33 {
+    width: 68.75%; }
+  .col-md-34 {
+    width: 70.83333%; }
+  .col-md-35 {
+    width: 72.91667%; }
+  .col-md-36 {
+    width: 75%; }
+  .col-md-37 {
+    width: 77.08333%; }
+  .col-md-38 {
+    width: 79.16667%; }
+  .col-md-39 {
+    width: 81.25%; }
+  .col-md-40 {
+    width: 83.33333%; }
+  .col-md-41 {
+    width: 85.41667%; }
+  .col-md-42 {
+    width: 87.5%; }
+  .col-md-43 {
+    width: 89.58333%; }
+  .col-md-44 {
+    width: 91.66667%; }
+  .col-md-45 {
+    width: 93.75%; }
+  .col-md-46 {
+    width: 95.83333%; }
+  .col-md-47 {
+    width: 97.91667%; }
+  .col-md-48 {
+    width: 100%; } }
 
 @media only screen and (min-width: 900px) {
   .container {
     width: 100%;
     margin: 0 auto;
     max-width: 1200px; }
-  .col-1 {
+  .col-lg-1 {
+    width: 2.08333%; }
+  .col-lg-2 {
     width: 4.16667%; }
-  .col-2 {
+  .col-lg-3 {
+    width: 6.25%; }
+  .col-lg-4 {
     width: 8.33333%; }
-  .col-3 {
+  .col-lg-5 {
+    width: 10.41667%; }
+  .col-lg-6 {
     width: 12.5%; }
-  .col-4 {
+  .col-lg-7 {
+    width: 14.58333%; }
+  .col-lg-8 {
     width: 16.66667%; }
-  .col-5 {
+  .col-lg-9 {
+    width: 18.75%; }
+  .col-lg-10 {
     width: 20.83333%; }
-  .col-6 {
+  .col-lg-11 {
+    width: 22.91667%; }
+  .col-lg-12 {
     width: 25%; }
-  .col-7 {
+  .col-lg-13 {
+    width: 27.08333%; }
+  .col-lg-14 {
     width: 29.16667%; }
-  .col-8 {
+  .col-lg-15 {
+    width: 31.25%; }
+  .col-lg-16 {
     width: 33.33333%; }
-  .col-9 {
+  .col-lg-17 {
+    width: 35.41667%; }
+  .col-lg-18 {
     width: 37.5%; }
-  .col-10 {
+  .col-lg-19 {
+    width: 39.58333%; }
+  .col-lg-20 {
     width: 41.66667%; }
-  .col-11 {
+  .col-lg-21 {
+    width: 43.75%; }
+  .col-lg-22 {
     width: 45.83333%; }
-  .col-12 {
+  .col-lg-23 {
+    width: 47.91667%; }
+  .col-lg-24 {
     width: 50%; }
-  .col-13 {
+  .col-lg-25 {
+    width: 52.08333%; }
+  .col-lg-26 {
     width: 54.16667%; }
-  .col-14 {
+  .col-lg-27 {
+    width: 56.25%; }
+  .col-lg-28 {
     width: 58.33333%; }
-  .col-15 {
+  .col-lg-29 {
+    width: 60.41667%; }
+  .col-lg-30 {
     width: 62.5%; }
-  .col-16 {
+  .col-lg-31 {
+    width: 64.58333%; }
+  .col-lg-32 {
     width: 66.66667%; }
-  .col-17 {
+  .col-lg-33 {
+    width: 68.75%; }
+  .col-lg-34 {
     width: 70.83333%; }
-  .col-18 {
+  .col-lg-35 {
+    width: 72.91667%; }
+  .col-lg-36 {
     width: 75%; }
-  .col-19 {
+  .col-lg-37 {
+    width: 77.08333%; }
+  .col-lg-38 {
     width: 79.16667%; }
-  .col-20 {
+  .col-lg-39 {
+    width: 81.25%; }
+  .col-lg-40 {
     width: 83.33333%; }
-  .col-21 {
+  .col-lg-41 {
+    width: 85.41667%; }
+  .col-lg-42 {
     width: 87.5%; }
-  .col-22 {
+  .col-lg-43 {
+    width: 89.58333%; }
+  .col-lg-44 {
     width: 91.66667%; }
-  .col-23 {
+  .col-lg-45 {
+    width: 93.75%; }
+  .col-lg-46 {
     width: 95.83333%; }
-  .col-24 {
+  .col-lg-47 {
+    width: 97.91667%; }
+  .col-lg-48 {
     width: 100%; } }
 
-body {
+.hidden {
+  display: none; }
+
+.main-navigation {
+  padding: 14px 6px; }
+  .main-navigation ul {
+    list-style: none; }
+  .main-navigation .menu {
+    font-size: 0;
+    position: relative; }
+    .main-navigation .menu > li {
+      display: inline-block;
+      padding: 0 1px;
+      padding-bottom: 6px; }
+      .main-navigation .menu > li:hover .menu__sub {
+        display: block; }
+      .main-navigation .menu > li:hover > a {
+        background-color: white;
+        color: #323232; }
+      .main-navigation .menu > li > a:active {
+        -webkit-box-shadow: inset 0 2px 1px #696969;
+                box-shadow: inset 0 2px 1px #696969;
+        background-color: #ededed; }
+      .main-navigation .menu > li > a {
+        border-radius: 16px; }
+      .main-navigation .menu > li.curent {
+        background-color: #d07058;
+        color: #fff; }
+    .main-navigation .menu a {
+      display: inline-block;
+      text-decoration: none;
+      color: white;
+      line-height: 18px;
+      padding: 6px 13px 7px;
+      -webkit-transition: all 0.2s ease;
+      transition: all 0.2s ease; }
+    .main-navigation .menu__sub {
+      display: none;
+      padding: 9px 0 6px;
+      background-color: white;
+      color: #323232;
+      margin-top: 5px;
+      margin-left: -7px;
+      z-index: 5;
+      border-radius: 4px;
+      position: absolute;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 16px;
+      -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+              box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4); }
+      .main-navigation .menu__sub li {
+        padding: 0 7px; }
+        .main-navigation .menu__sub li:hover {
+          background-color: #fbded7; }
+        .main-navigation .menu__sub li:active {
+          background-color: #f6b5a5; }
+        .main-navigation .menu__sub li.curent a {
+          background-color: #d07058;
+          color: #fff; }
+        .main-navigation .menu__sub li.title {
+          padding: 0 20px 13px;
+          border-bottom: 1px solid #d1d0ce;
+          margin-bottom: 2px;
+          background-color: inherit; }
+      .main-navigation .menu__sub a {
+        color: inherit;
+        font-weight: normal; }
+
+.main-header {
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 25.03.2018, 11:13:39
+    Author     : Andrey
+*/
+body, .main-navigation .menu > li {
+  font-family: Roboto;
+  font-weight: normal;
   font-size: 16px;
+  line-height: 22px;
+  color: white;
   background-color: #849d8f; }

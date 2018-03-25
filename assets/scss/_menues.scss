@@ -1,0 +1,108 @@
+
+
+.main-navigation{
+    $submenu-top-padding: 5px;
+    
+    padding: 14px 6px;
+
+    ul{
+        list-style: none; 
+    }
+
+    .menu{
+        font-size: 0;
+        position: relative;
+
+        & > li{
+            @extend body;
+
+            display: inline-block;
+            padding: 0 1px;
+            padding-bottom: ($submenu-top-padding+1);
+            &:hover{
+                .menu__sub{
+                    display: block;  
+                }
+                & > a{
+                    background-color: white;
+                    color: $color-text-grey;  
+                }
+            }
+
+            & > a:active{
+                box-shadow:  inset 0 2px 1px #696969;
+                background-color: #ededed;
+            }
+
+
+            & > a{
+
+                border-radius: 16px;
+
+            }
+            &.curent{
+                background-color: #d07058;
+                color:#fff;
+            }
+        }
+
+        a{
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            line-height: 18px;
+            padding: 6px 13px 7px;
+            transition: all 0.2s ease;
+        }
+
+        &__sub{
+            display: none;
+
+            padding: 9px 0 6px;
+            background-color: white;
+            color: $color-text-grey;
+            margin-top: $submenu-top-padding;
+            margin-left: -7px;
+            z-index: 5;
+            border-radius: 4px;
+            position: absolute;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 16px;
+            box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+
+            li{
+                padding: 0 7px;
+
+                &:hover{
+                    background-color: #fbded7;
+                }
+                &:active{
+                    background-color: #f6b5a5;
+                }
+                &.curent{
+                    a{
+                        background-color: #d07058;
+                        color: #fff;
+                    }
+                }
+                &.title{
+                    padding:0 20px 13px;
+                    border-bottom: 1px solid #d1d0ce;
+                    margin-bottom: 2px;
+                    background-color: inherit;
+                    
+                }
+            }
+
+            a{
+                color: inherit;
+                font-weight: normal;
+            }
+
+        }
+
+    }
+
+
+}

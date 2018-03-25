@@ -1,14 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 17.03.2018, 19:49:44
-    Author     : Andrey
-*/
-
-
 *, *:after, *:before {
     margin: 0;
     padding: 0;
@@ -27,9 +16,9 @@ img {
 }
 
 .container{
-     @extend %clearfix;
-     padding-left: $grid-padding;
-     padding-right: $grid-padding;
+    @extend %clearfix;
+    padding-left: $grid-padding;
+    padding-right: $grid-padding;
 }
 
 .row {
@@ -38,10 +27,16 @@ img {
     margin-right: -$grid-padding;
 }
 
+.pull-left{
+    float: left !important;
+}
+.pull-right{
+    float: right !important;
+}
 
 [class*='col-'] {
     float: left;
-    padding: $grid-padding;
+    padding: 0 $grid-padding;
     width: 100%;
     min-height: 1px; 
 }   
@@ -53,13 +48,30 @@ img {
     margin: 0 auto;
     max-width: $grid-max-width;     
 }
+
+
 @for $i from 1 through $grid-columns {      
-    .col-lg-#{$i} {         
+    .col-sm-#{$i} {         
         width: 100% / $grid-columns * $i;   
     }           
-}   
+}  
 
 
+@media #{$breakpoint-small} {
+    
+    .container {      
+        width: 100%;
+        margin: 0 auto;
+        max-width: $grid-max-width;     
+    }
+
+    @for $i from 1 through $grid-columns {      
+        .col-md-#{$i} {         
+            width: 100% / $grid-columns * $i;   
+        }           
+    }   
+
+}
 
 @media #{$breakpoint-medium} {
     .container {      
@@ -68,8 +80,11 @@ img {
         max-width: $grid-max-width;     
     }
     @for $i from 1 through $grid-columns {      
-        .col-#{$i} {         
+        .col-lg-#{$i} {         
             width: 100% / $grid-columns * $i;   
         }           
     }   
+}
+.hidden{
+    display: none;
 }

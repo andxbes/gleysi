@@ -937,7 +937,8 @@ and open the template in the editor.
     Created on : 26.03.2018, 20:28:55
     Author     : Andrey
 */
-form input[type="phone"] input[type="email"],
+form input[type="phone"],
+form input[type="email"],
 form input[type="password"],
 form input[type="text"] {
   display: block;
@@ -950,7 +951,8 @@ form input[type="text"] {
   margin: 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  form input[type="phone"] input[type="email"]:focus,
+  form input[type="phone"]:focus,
+  form input[type="email"]:focus,
   form input[type="password"]:focus,
   form input[type="text"]:focus {
     border-color: #2e88e4; }

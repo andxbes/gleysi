@@ -956,6 +956,11 @@ form input[type="text"] {
   form input[type="password"]:focus,
   form input[type="text"]:focus {
     border-color: #2e88e4; }
+  form input[type="phone"]:hover,
+  form input[type="email"]:hover,
+  form input[type="password"]:hover,
+  form input[type="text"]:hover {
+    border-color: #9a9a9a; }
 
 .head__navigation {
   padding: 14px 6px 10px; }

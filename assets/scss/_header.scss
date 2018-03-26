@@ -3,6 +3,7 @@
 .header{
     padding-top: 10px;
     padding-bottom: 10px;
+    position: relative;
 
     .logo{
         fill:white;
@@ -13,7 +14,7 @@
 
     .user-block{
         padding-left: 12px;
-        
+
         @extend %clearfix;
         &>*{
             margin: 12px 5px;
@@ -23,12 +24,68 @@
 
 }
 
+.search,
+.login,
+.cart{
+    position: relative;
+    &:hover{
+        .hidden{
+            display: block;
+        }
+    }
+}
+
 .search{
     min-width: 32px;
+    .hidden{
+        position: absolute;
+        top: 30px;
+        right: 0px;
+        z-index: 100;
+        padding-top: 7px;
+
+
+    }
+    form{
+        @extend %clearfix;
+        z-index: 1000;
+        width: 341px;
+        padding: 0 15px;
+        background-color: $color-background-forms;
+        border-radius: 5px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+    }
 }
 
 .login{
+    @extend .search;
     min-width: 94px;
+
+    .hidden{
+         right: -1px;
+    }
+    form{
+        width: 277px;
+        padding: 0 4px 21px;
+        
+        .btn{
+            font-size: 18px;
+            line-height: 24px;
+            padding: 10px 25px;
+            /*border-radius: 19px;*/
+
+        }
+        .login__another{
+            a{
+                display: block;
+                font-size: 13px;
+                line-height: 21px;
+                text-decoration: underline;
+            }
+        }
+    }
+
 }
 
 .cart {
@@ -39,12 +96,12 @@
 
     }
     &.cart-not-empty{
-         background-color: #fff;
-         color:#000;
+        /*         background-color: #fff;
+                 color:#000;*/
         .ico{
             fill: #000;
         }
-        
+
         .ico__place{
             fill: #E84D37;
         }
@@ -70,5 +127,5 @@
             opacity: 0.8;
         }
     }
-    
+
 }

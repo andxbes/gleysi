@@ -87,10 +87,12 @@ and open the template in the editor.
                                         </g>
                                         </svg>
                                     </span>
-                                    <form class="search__form hidden" action="">
-                                        <input type="text" name="s" value="" placeholder="Что ищем?">
-                                        <input type="submit">       
-                                    </form>
+                                    <div class="hidden">
+                                        <form class="search__form" action="">
+                                            <input type="text" name="s" value="" placeholder="Что ищем?">
+                                            <!--<input type="submit">-->       
+                                        </form>
+                                    </div>
                                 </div>
                                 <div class="login c-btn--with-text">
                                     <span class="ico">
@@ -103,23 +105,27 @@ and open the template in the editor.
                                         </g>
                                         </svg>
                                     </span>
-                                    <span class="text">Вход</span>  
-                                    <form class="login__form hidden" action="">
-                                        <div class="col-sm-48">
-                                            <input type="text" name="name" value="" placeholder="Что ищем?">
-                                            <input type="password" name="pass" value="" placeholder="Что ищем?">
-                                            <div class="row">
-                                                <div class="col-sm-24">
-                                                    <button type="submit">Войти</button>    
-                                                </div>
-                                                <div class="col-sm-24 login__another">
-                                                    <a href="#">Забыли пароль?</a>
-                                                    <a href="#">Новая регистрация</a>
+                                    <span class="text">Вход</span>
+                                    <div class="hidden">
+                                        <form class="login__form " action="">
+                                            <div class="col-sm-48">
+                                                <input type="email" name="name" value="" placeholder="Электронная почта">
+                                                <input type="password" name="pass" value="" placeholder="Пароль">
+                                                <div class="row">
+                                                    <div class="col-sm-24">
+                                                        <button class="btn" type="submit">Войти</button>    
+                                                    </div>
+                                                    <div class="col-sm-24 login__another">
+                                                        <div class="row">
+                                                            <a class="reverse" href="#">Забыли пароль?</a>
+                                                            <a class="reverse" href="#">Новая регистрация</a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                    </form>
+                                        </form>
+                                    </div>
                                 </div>
                                 <div class="cart c-btn--with-text"> <!--cart-not-empty-->
                                     <span class="ico">

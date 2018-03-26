@@ -1,3 +1,19 @@
+a{
+    text-decoration: none;
+    color:white;
+    &:active,
+    &:hover{
+        color:#ffbc9e;
+    }
+}
+a.reverse{
+    color: $color-text-grey;
+    &:active,
+    &:hover{
+        color:#e84d37;
+    }
+}
+
 .c-btn{
 
     display: flex;
@@ -42,6 +58,7 @@
     $text-shadow: 0.06em;
     $box-shadow: .056em;
     
+    border: none;
     display: inline-block;
     padding: .20em 1.19em .40em;
     border-radius: 1em;

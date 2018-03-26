@@ -442,12 +442,12 @@ and open the template in the editor.
     Created on : 17.03.2018, 19:49:54
     Author     : Andrey
 */
-.container, .row, .header .user-block {
+.container, .row, .header .user-block, .search form, .login form {
   *zoom: 1; }
-  .container:before, .row:before, .header .user-block:before, .container:after, .row:after, .header .user-block:after {
+  .container:before, .row:before, .header .user-block:before, .search form:before, .login form:before, .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after {
     content: " ";
     display: table; }
-  .container:after, .row:after, .header .user-block:after {
+  .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after {
     clear: both; }
 
 /*
@@ -850,6 +850,17 @@ img {
 .hidden {
   display: none; }
 
+a {
+  text-decoration: none;
+  color: white; }
+  a:active, a:hover {
+    color: #ffbc9e; }
+
+a.reverse {
+  color: #323232; }
+  a.reverse:active, a.reverse:hover {
+    color: #e84d37; }
+
 .c-btn, .c-btn--with-text {
   display: -webkit-box;
   display: -webkit-flex;
@@ -891,6 +902,7 @@ img {
     font-weight: normal; }
 
 .btn {
+  border: none;
   display: inline-block;
   padding: .20em 1.19em .40em;
   border-radius: 1em;
@@ -915,6 +927,33 @@ img {
     background: #ff603e linear-gradient(to top, #ff603e, #d84732);
     -webkit-box-shadow: inset 0 0.056em 0.056em #ac1000;
             box-shadow: inset 0 0.056em 0.056em #ac1000; }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26.03.2018, 20:28:55
+    Author     : Andrey
+*/
+form input[type="phone"] input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+  display: block;
+  width: 100%;
+  border: 2px solid #d3d3d2;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 9px 13px;
+  line-height: 24px;
+  margin: 20px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  form input[type="phone"] input[type="email"]:focus,
+  form input[type="password"]:focus,
+  form input[type="text"]:focus {
+    border-color: #2e88e4; }
 
 .head__navigation {
   padding: 14px 6px 10px; }
@@ -984,7 +1023,8 @@ img {
 
 .header {
   padding-top: 10px;
-  padding-bottom: 10px; }
+  padding-bottom: 10px;
+  position: relative; }
   .header .logo {
     fill: white; }
     .header .logo:hover {
@@ -995,19 +1035,59 @@ img {
       margin: 12px 5px;
       float: left; }
 
-.search {
+.search, .login,
+.login,
+.cart {
+  position: relative; }
+  .search:hover .hidden, .login:hover .hidden,
+  .login:hover .hidden,
+  .cart:hover .hidden {
+    display: block; }
+
+.search, .login {
   min-width: 32px; }
+  .search .hidden, .login .hidden {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 100;
+    padding-top: 7px; }
+  .search form, .login form {
+    z-index: 1000;
+    width: 341px;
+    padding: 0 15px;
+    background-color: #f8f7f4;
+    border-radius: 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4); }
 
 .login {
   min-width: 94px; }
+  .login .hidden {
+    right: -1px; }
+  .login form {
+    width: 277px;
+    padding: 0 4px 21px; }
+    .login form .btn {
+      font-size: 18px;
+      line-height: 24px;
+      padding: 10px 25px;
+      /*border-radius: 19px;*/ }
+    .login form .login__another a {
+      display: block;
+      font-size: 13px;
+      line-height: 21px;
+      text-decoration: underline; }
 
 .cart {
   min-width: 117px; }
   .cart .ico__place {
     fill: transparent; }
   .cart.cart-not-empty {
-    background-color: #fff;
-    color: #000; }
+    /*         background-color: #fff;
+                 color:#000;*/ }
     .cart.cart-not-empty .ico {
       fill: #000; }
     .cart.cart-not-empty .ico__place {

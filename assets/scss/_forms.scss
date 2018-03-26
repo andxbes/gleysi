@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 26.03.2018, 20:28:55
+    Author     : Andrey
+*/
+
+.search__form{
+
+    
+    
+}
+
+form{
+    input[type="phone"]
+    input[type="email"],
+    input[type="password"],
+    input[type="text"]{
+        display: block;
+        width: 100%;
+        border: 2px solid #d3d3d2;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 9px 13px;
+        line-height: 24px;
+        margin: 20px 0;
+        box-sizing: border-box;
+        &:focus{
+            border-color: #2e88e4;
+        }
+    }
+}

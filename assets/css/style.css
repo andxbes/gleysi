@@ -1118,8 +1118,7 @@ form input[type="text"] {
       opacity: 0.8; }
 
 .slider {
-  top: -43px;
-  margin-bottom: -61px; }
+  top: -43px; }
   .slider__buttons {
     text-align: center;
     font-size: 34px; }
@@ -1138,6 +1137,9 @@ form input[type="text"] {
     max-width: 700px;
     margin: auto;
     margin-bottom: 32px; }
+  .slider ~ * {
+    position: relative;
+    top: -61px; }
 
 .slick-dots {
   position: absolute;

@@ -1,6 +1,5 @@
 .slider{
-    top: -43px;
-    margin-bottom:-61px;
+    top: -43px;   
     &__buttons{
         text-align: center;
         font-size: 34px;
@@ -23,6 +22,10 @@
         max-width: 700px;
         margin: auto;
         margin-bottom: 32px;
+    }
+    &  ~ *{
+        position: relative;
+        top: -61px;
     }
 }
 
@@ -51,9 +54,7 @@
     }
     .slick-active{
         button{
-           background: #fff;
+            background: #fff;
         }
     }
-
 }
-

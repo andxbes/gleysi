@@ -4,6 +4,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     position: relative;
+    z-index: 1;
 
     .logo{
         fill:white;
@@ -22,6 +23,12 @@
         }
     }
 
+}
+
+.header-main{
+    position: absolute;
+    margin: auto;
+    width: 100%;   
 }
 
 .search,
@@ -63,12 +70,12 @@
     min-width: 94px;
 
     .hidden{
-         right: -1px;
+        right: -1px;
     }
     form{
         width: 277px;
         padding: 0 4px 21px;
-        
+
         .btn{
             font-size: 18px;
             line-height: 24px;

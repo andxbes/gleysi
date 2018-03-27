@@ -1032,7 +1032,8 @@ form input[type="text"] {
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .header .logo {
     fill: white; }
     .header .logo:hover {
@@ -1042,6 +1043,11 @@ form input[type="text"] {
     .header .user-block > * {
       margin: 12px 5px;
       float: left; }
+
+.header-main {
+  position: absolute;
+  margin: auto;
+  width: 100%; }
 
 .search, .login,
 .login,
@@ -1117,33 +1123,36 @@ form input[type="text"] {
     .contacts__phone:hover {
       opacity: 0.8; }
 
-.slider {
-  top: -43px; }
-  .slider__buttons {
-    text-align: center;
-    font-size: 34px; }
-  .slider__text {
-    position: absolute;
-    bottom: 58px;
-    width: 100%; }
-  .slider__image {
-    margin: 0 auto; }
-  .slider__item {
-    text-align: center; }
-  .slider__title {
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 60px;
-    max-width: 700px;
-    margin: auto;
-    margin-bottom: 32px; }
-  .slider ~ * {
-    position: relative;
-    top: -61px; }
+.slider__buttons {
+  text-align: center;
+  font-size: 34px; }
+
+.slider__text {
+  position: absolute;
+  bottom: 246px;
+  width: 100%; }
+
+.slider__image {
+  margin: 0 auto; }
+
+.slider__item {
+  text-align: center; }
+
+.slider__title {
+  font-size: 60px;
+  font-weight: bold;
+  line-height: 60px;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 32px; }
+
+.slider ~ * {
+  position: relative;
+  top: -206px; }
 
 .slick-dots {
   position: absolute;
-  bottom: 81px;
+  bottom: 269px;
   margin-left: 14px;
   list-style: none; }
   .slick-dots li {
@@ -1162,6 +1171,11 @@ form input[type="text"] {
         background-color: rgba(255, 255, 255, 0.4); }
   .slick-dots .slick-active button {
     background: #fff; }
+
+.banner {
+  text-align: center; }
+  .banner img {
+    border-radius: 15px; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

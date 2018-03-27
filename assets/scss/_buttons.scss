@@ -60,7 +60,7 @@ a.reverse{
     
     border: none;
     display: inline-block;
-    padding: .20em 1.19em .40em;
+    padding: .19em 1.18em .36em;
     border-radius: 1em;
     box-shadow:  0 $box-shadow $box-shadow #ac1000;
     margin-bottom: $box-shadow;
@@ -76,6 +76,7 @@ a.reverse{
     
     &:hover{
         background: rgb(255,255,255) linear-gradient(to top,rgba(231,74,53,.8),rgba(242,104,67,.8));
+        color:white;
     }
     
     &:active{

@@ -6,7 +6,9 @@
 
 
 jQuery(document).ready(function ($) {
-    $(".slider").slick({
+    var $slider = $(".slider");
+    var $body = $('body');
+    $slider.slick({
         dots: true,
         infinite: true,
         speed: 300,
@@ -16,5 +18,14 @@ jQuery(document).ready(function ($) {
         slidesToScroll: 1,
         arrows: false,
         fade: true
+    });
+//    $slider.on('afterChange', function (event, slick, currentSlide, nextSlide) {
+//        var backgroundColor = $(slick.$slides.get(currentSlide)).data('background');
+//        $body.css('background-color',backgroundColor);
+//    });
+    
+    $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        var backgroundColor = $(slick.$slides.get(nextSlide)).data('background');
+        $body.css('background-color',backgroundColor);
     });
 });

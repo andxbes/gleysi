@@ -904,7 +904,7 @@ a.reverse {
 .btn {
   border: none;
   display: inline-block;
-  padding: .20em 1.19em .40em;
+  padding: .19em 1.18em .36em;
   border-radius: 1em;
   -webkit-box-shadow: 0 0.056em 0.056em #ac1000;
           box-shadow: 0 0.056em 0.056em #ac1000;
@@ -921,7 +921,8 @@ a.reverse {
   text-decoration: none; }
   .btn:hover {
     background: white -webkit-gradient(linear, left bottom, left top, from(rgba(231, 74, 53, 0.8)), to(rgba(242, 104, 67, 0.8)));
-    background: white linear-gradient(to top, rgba(231, 74, 53, 0.8), rgba(242, 104, 67, 0.8)); }
+    background: white linear-gradient(to top, rgba(231, 74, 53, 0.8), rgba(242, 104, 67, 0.8));
+    color: white; }
   .btn:active {
     background: #ff603e -webkit-gradient(linear, left bottom, left top, from(#ff603e), to(#d84732));
     background: #ff603e linear-gradient(to top, #ff603e, #d84732);
@@ -1116,9 +1117,49 @@ form input[type="text"] {
     .contacts__phone:hover {
       opacity: 0.8; }
 
-.slider__buttons {
-  text-align: center;
-  font-size: 34px; }
+.slider {
+  top: -43px;
+  margin-bottom: -61px; }
+  .slider__buttons {
+    text-align: center;
+    font-size: 34px; }
+  .slider__text {
+    position: absolute;
+    bottom: 58px;
+    width: 100%; }
+  .slider__image {
+    margin: 0 auto; }
+  .slider__item {
+    text-align: center; }
+  .slider__title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 60px;
+    max-width: 700px;
+    margin: auto;
+    margin-bottom: 32px; }
+
+.slick-dots {
+  position: absolute;
+  bottom: 81px;
+  margin-left: 14px;
+  list-style: none; }
+  .slick-dots li {
+    display: inline-block;
+    margin-right: 8px; }
+    .slick-dots li button {
+      display: inline-block;
+      border-radius: 50%;
+      border: 2px solid white;
+      content: "";
+      width: 21px;
+      height: 21px;
+      background-color: inherit;
+      font-size: 0; }
+      .slick-dots li button:hover {
+        background-color: rgba(255, 255, 255, 0.4); }
+  .slick-dots .slick-active button {
+    background: #fff; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -1134,5 +1175,7 @@ body, .head__navigation .menu > li {
   font-weight: normal;
   font-size: 16px;
   line-height: 22px;
-  color: white;
+  color: white; }
+
+.body {
   background-color: #849d8f; }

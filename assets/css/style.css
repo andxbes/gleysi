@@ -1173,9 +1173,37 @@ form input[type="text"] {
     background: #fff; }
 
 .banner {
+  position: relative;
   text-align: center; }
   .banner img {
     border-radius: 15px; }
+  .banner__text {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 14px 30px 14px 32px; }
+  .banner__btn {
+    position: absolute;
+    right: 34px;
+    bottom: 28px;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px 23px 12px 22px;
+    letter-spacing: 0;
+    border-radius: 30px; }
+  .banner__header {
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 16px;
+    font-weight: bold; }
+  .banner__description {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    word-spacing: .02em; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

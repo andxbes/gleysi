@@ -30,7 +30,8 @@ gulp.task('css', function () {
 //            })
             )
             .pipe(cssBase64({
-                maxWeightResource: 4000,
+                baseDir: "../images",//путь до папки с изображениями которые следует обрабатывать  , относительно директории sass/css
+                maxWeightResource: 4000,// Размер в байтах , а не ширина 
                 extensionsAllowed: ['.gif', '.jpg', '.png','.svg']
             }))
             .pipe(autoprefixer(['last 2 versions', '> 1%', 'ie 8', 'ie 7', 'iOS >= 8', 'Safari >= 8']))

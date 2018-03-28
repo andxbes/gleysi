@@ -9,6 +9,7 @@ jQuery(document).ready(function ($) {
     var $slider = $(".slider");
     var $body = $('body');
     $slider.slick({
+        autoplay:true,
         dots: true,
         infinite: true,
         speed: 300,

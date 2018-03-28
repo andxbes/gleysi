@@ -1185,10 +1185,10 @@ form input[type="text"] {
     left: 0;
     right: 0;
     bottom: 0;
-    padding: 14px 30px 14px 32px; }
+    padding: 14px 17px 14px 19px; }
   .banner__btn {
     position: absolute;
-    right: 34px;
+    right: 21px;
     bottom: 28px;
     font-size: 18px;
     line-height: 24px;

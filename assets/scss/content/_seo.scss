@@ -1,0 +1,61 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 30.03.2018, 1:59:17
+    Author     : Andrey
+*/
+
+%seo-image{
+    $size: 65px;
+    display: inline-block;
+    width: $size;
+    height: $size;
+    /*margin-right: 7px;*/
+    background-repeat: no-repeat;
+
+}
+
+.seo{
+    border-radius: 14px;
+    background-image: url(../images/waferr.jpg);
+    color: $color-text-grey;
+    padding: 14px 20px;
+    margin-bottom: 40px;
+
+    &__title{
+        display: inline-block;
+        /*width: 90%;*/
+
+    }
+    &__item{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10px;
+        p{
+            padding-top: 12px;
+        }
+    }
+
+    &__ice-cream{
+        @extend %seo-image;
+        background-image: url(../images/icecream.svg);
+    }
+    &__cow{
+        @extend %seo-image;
+        background-image: url(../images/cow.svg);
+    }
+    &__leaf{
+        @extend %seo-image;
+        background-image: url(../images/leaf.svg);
+    }
+
+    &__termometer{
+        @extend %seo-image;
+        background-image: url(../images/termometer.svg);
+
+
+    }
+}

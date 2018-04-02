@@ -435,7 +435,7 @@ template {
   text-align: right; }
 
 h2, .h2 {
-  margin-top: 10px;
+  /*margin-top: 10px;*/
   line-height: 1.2em;
   font-weight: normal;
   margin-bottom: 12px; }
@@ -959,16 +959,16 @@ form input[type="text"] {
   margin: 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  form input[type="phone"]:focus,
-  form input[type="email"]:focus,
-  form input[type="password"]:focus,
-  form input[type="text"]:focus {
-    border-color: #2e88e4; }
   form input[type="phone"]:hover,
   form input[type="email"]:hover,
   form input[type="password"]:hover,
   form input[type="text"]:hover {
     border-color: #9a9a9a; }
+  form input[type="phone"]:focus,
+  form input[type="email"]:focus,
+  form input[type="password"]:focus,
+  form input[type="text"]:focus {
+    border-color: #2e88e4; }
 
 .head__navigation {
   padding: 14px 6px 10px; }
@@ -1218,26 +1218,26 @@ form input[type="text"] {
 
 **/
 .hit {
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 5px;
-  margin-bottom: 13px; }
+  margin-bottom: -43px; }
   .hit__wraper {
     display: block;
     position: relative;
-    text-align: center; }
-    .hit__wraper::before {
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 13px; }
+  .hit__img-wrapper {
+    position: relative; }
+    .hit__img-wrapper::before {
       border-radius: 50%;
       content: "";
       display: inline-block;
       position: absolute;
       background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAA9CAMAAAApvJHbAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAACK1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////8jHyCRj4+sq6uDgYG6ublnZGV1cnNMSEmenZ3Ix8fW1dX+/v6ko6P9/f1ZVledm5v8+/yOjIzi4eFua2yqqaldWlslISKXlZXOzc0mIyMvKyz5+fmcmprn5ufl5eV5d3e8uruzsrL29vbq6urMy8uurK03MzStrKxgXV7GxcWpp6jEw8QsKSrk5OTCwcHv7u40MTG7urplYmK0s7PW1taEgoNHREVlY2NKR0d3dHUkICHj4+MtKirKycqXlpZTUFFQTU3DwsLPzs45NTZYVVV7eXmQjo6bmZqMiouYlpeGhIX4+Ph4dXakoqL19PWFg4RJRkYnIyT29fW9u7yJh4eEgYLNzMz6+vpfXFzKyck+OjtYVVZbWFnAv78/OzyLiImmpaWBf38pJSYxLS6SkJFwbW7c3Nzy8vKwr68yLi98eXo4NDUmIiM8ODmysbFvbG21s7T09PS2tLXZ2NloZWbU09NraGmVk5PY19iUkpPe3t41MTKenJyioKHLystCPz/FxMRcWVpLR0g7ODhyb3Dj4uJhXl9XVFREQEG5uLhmZGQsKCmRj5BAPT5UUVJMSUq/vr7HxsZeW1u+vb1samrp6OiopqeAfn5ST1Dp6emnpaZqZ2guKit+fH2W07JmAAAAGnRSTlMAk3tkAyH3/PAH9qagLdYe3pSub7+XVe40Bu9SI3oAAANYSURBVEjHpZdlX+NAEIeDFofSFsr8S3GHw/24Qw53t+Pc3d3d3d3d/eNdNiltswmlJfMim8yvT3d3dFcQNCXQarKYY0IMZAiJMVtM1kDBawmNi40npcTHxoV6xUYbQ0hLQozRs7JBEQaaSQwRQZ7X7B9GniTM38P6I6NoNomKnAkOCKbZJThA20l+5J34abgvIZy8lfAE1czewyLOz+5HvogfZzDyTRSmiwz2kQ52c1xoFPkqUa6w8Sffxd8Z22FzoMOmYz6C5iIRjpR0y6qOklfis2o70Y5d653azPtd6aUZBbczSmvr85wZJyes0e0PC5FC9Kw4hygfuZJm/v59VJ/86DHKU1MnBmoSXb81SgZ3LwY9+EpUiTQiO2ySZi8OsiEJyapywcwe5675gs9E79HmpOsOQ5ruIYpUO48T6Vh3RSn66dvwB3LSLUAPG9ORo6JjxfRQFMAqjFIW3rroA0CSTKvnjg8UrApFdhmqBtArvm2T6Y1AOxvb1fsmsgompeIdPr55wl5sEl0AIH0GqxGZBItSkYzXGHLRd130BTVtEcxKRT6KcdFFv0CZTDeyQODFLMQoFZeB4Q4nXY0lg7jGPptxSE3HCFzjGAEmyUlX4kcqMthnGjZotBeBbx0NWOmif2LMQZc4Qk/ZXARes9MR3zb0sYVnO2gbxjXyTDX3GYdrbLDTOP6Rg+5jsa+em9v3ceBUtrxUO01isUhPkRR6WVr75myeJTrYYSb7L/ytEGnJYzVI1LI55+/raJDXKNLf8Yem6RQt2szFWmZn+S1cZW/3MJSM30QT+DQjbeHivBfdU+jMFN8S8bQcI0Q5co5p0iYux9KQlteKKxL9AC/JM23l8rsbN6lJMm+jaD67OD6X6bVYp5XfitqSN3onk25gnpRUEP3Fku687LFVWrVFUdcWMrAF52S6tUKipSUvR75mXXOvqUfRTHSpGAskmi2Bjsl0JZZp1lT3er4HBeJzEF1Ei4Ba2VyFUllHE08buV5St2k3G06fPcnoIxUynSvvqZ8P8miuj1WvHmPD5hPio61ImpO2lm1hw4KlK7T7mOcemr1mlh6qr3/rPDvoO7foPDPpPK/pPCvqO6fqPCPrPJ/rvRvovJfovBPpvY/pvQv6cg/9D3ApZgcwEZ23AAAAAElFTkSuQmCC);
-      left: 0;
       top: 0;
       width: 61px;
       height: 61px;
       background-repeat: no-repeat; }
-    .hit__wraper img {
+    .hit__img-wrapper img {
       border-radius: 50%;
       margin-bottom: 7px; }
   .hit__price {
@@ -1269,11 +1269,12 @@ form input[type="text"] {
     color: white; }
   .hit:hover .hit__btn {
     opacity: 1; }
-  .hit:hover {
+  .hit:hover .hit__wraper {
     background-color: rgba(255, 255, 255, 0.2);
     -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
             box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
-    color: white; }
+    color: white;
+    z-index: 100; }
 
 .rub {
   font-size: 32px; }
@@ -1286,9 +1287,11 @@ form input[type="text"] {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTEsMjFoNy40NTFjNS4yNDcsMCw5LjUtNC4yNTMsOS41LTkuNVMyMy42OTgsMiwxOC40NTEsMkgxMUg3LjM3OUg2djE0SDJ2NWg0djNIMnY1aDR2NGg1ICB2LTRoMTV2LTVIMTFWMjF6IE0xMSw3aDcuNDUxVjYuOTdjMi41MDEsMCw0LjUyOSwyLjAyOCw0LjUyOSw0LjUzcy0yLjAyOCw0LjUzLTQuNTI5LDQuNTNWMTZIMTFWN3oiLz4NCjwvc3ZnPg==);
     margin-bottom: -3px; }
 
-.main-page .hit__price {
-  top: 66.5%; }
-
+/*.main-page{
+    .hit__price{
+        top: 66.5%;
+    }
+}*/
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -1309,7 +1312,7 @@ and open the template in the editor.
   border-radius: 14px;
   background-image: url(../images/waferr.jpg);
   color: #323232;
-  padding: 14px 20px;
+  padding: 24px 20px 14px;
   margin-bottom: 40px; }
   .seo__title {
     display: inline-block;

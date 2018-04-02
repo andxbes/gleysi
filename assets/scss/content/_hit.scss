@@ -9,24 +9,31 @@
 
 **/
 .hit{
-    padding-bottom: 10px;
-    padding-top:10px;
-    border-radius:5px;
-    margin-bottom:13px;
+    
+   
+   
+    margin-bottom:-43px;
 
     &__wraper{
         display: block;
         position: relative;
         text-align:center;
+        border-radius:5px;
+        padding:10px $grid-padding;
 
+        
+        
+    }
+    &__img-wrapper{
+        position: relative;
         &::before{
             $size:61px;
             border-radius: 50%;
+            
             content: "";
             display: inline-block;
             position: absolute;
             background-image: url(../images/hit.png);
-            left:0;
             top:0;
             width: $size;
             height: $size;
@@ -82,11 +89,15 @@
     }
 
 
-    &:hover{
+  
+    &:hover &__wraper{
         background-color: rgba(255,255,255,.2);
         box-shadow: 0 20px 20px rgba(0,0,0,0.4);
         color:white;
         
+      
+            z-index: 100;
+      
     }
 }
 .rub{
@@ -106,8 +117,8 @@
     }
 }
 
-.main-page{
+/*.main-page{
     .hit__price{
         top: 66.5%;
     }
-}
+}*/

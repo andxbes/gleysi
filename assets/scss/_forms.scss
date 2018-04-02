@@ -19,6 +19,7 @@ form{
     input[type="email"],
     input[type="password"],
     input[type="text"]{
+        
         display: block;
         width: 100%;
         border: 2px solid #d3d3d2;
@@ -28,11 +29,12 @@ form{
         line-height: 24px;
         margin: 20px 0;
         box-sizing: border-box;
-        &:focus{
-            border-color: #2e88e4;
-        }
+        
         &:hover{
             border-color: #9a9a9a;
+        }
+        &:focus{
+            border-color: #2e88e4;
         }
     }
 }

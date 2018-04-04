@@ -440,6 +440,9 @@ h2, .h2 {
   font-weight: normal;
   margin-bottom: 12px; }
 
+p {
+  margin-bottom: 18px; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -1367,6 +1370,8 @@ and open the template in the editor.
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDlweCIgaGVpZ2h0PSI0OXB4IiB2aWV3Qm94PSIwIDAgNDkgNDkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5IDQ5IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMzMjMyMzIiIGQ9Ik0yNC41LDBDMTAuOTY5LDAsMCwxMC45NjksMCwyNC41QzAsMzguMDMxLDEwLjk2OSw0OSwyNC41LDQ5QzM4LjAzMSw0OSw0OSwzOC4wMzEsNDksMjQuNSAgIEM0OSwxMC45NjksMzguMDMxLDAsMjQuNSwweiBNMjQuNSw0N0MxMi4wOTMsNDcsMiwzNi45MDYsMiwyNC41QzIsMTIuMDkzLDEyLjA5MywyLDI0LjUsMkMzNi45MDYsMiw0NywxMi4wOTMsNDcsMjQuNSAgIEM0NywzNi45MDYsMzYuOTA2LDQ3LDI0LjUsNDd6Ii8+DQoJPHBhdGggZmlsbD0iIzMyMzIzMiIgZD0iTTM0LjgwNywyNi43NTZjLTAuNDUtOS40OTMtOS4xOTctMTguNjkzLTkuNTg2LTE5LjA5N2MtMC4wMTUtMC4wMTUtMC4wMzMtMC4wMjMtMC4wNDgtMC4wMzcgICBjLTAuMDM3LTAuMDM0LTAuMDc2LTAuMDYyLTAuMTE4LTAuMDljLTAuMDQyLTAuMDI5LTAuMDg0LTAuMDU1LTAuMTMtMC4wNzdjLTAuMDE4LTAuMDA5LTAuMDMyLTAuMDIyLTAuMDUxLTAuMDMgICBjLTAuMDI3LTAuMDExLTAuMDU2LTAuMDExLTAuMDgzLTAuMDJjLTAuMDQ4LTAuMDE1LTAuMDk1LTAuMDI3LTAuMTQ1LTAuMDM0Yy0wLjA1MS0wLjAwOC0wLjEwMS0wLjAxLTAuMTUyLTAuMDEgICBjLTAuMDQ1LDAtMC4wODksMC4wMDItMC4xMzQsMC4wMDhjLTAuMDU1LDAuMDA4LTAuMTA1LDAuMDIxLTAuMTU4LDAuMDM4Yy0wLjAyNSwwLjAwOC0wLjA1MiwwLjAwOC0wLjA3NiwwLjAxOCAgIGMtMC4wMTgsMC4wMDctMC4wMzEsMC4wMjEtMC4wNDksMC4wMjljLTAuMDQ3LDAuMDIyLTAuMDksMC4wNDktMC4xMzMsMC4wNzljLTAuMDQyLDAuMDI4LTAuMDgxLDAuMDU3LTAuMTE4LDAuMDkxICAgYy0wLjAxNSwwLjAxMy0wLjAzMywwLjAyMS0wLjA0NiwwLjAzNmMtMC4zODksMC40MDQtOS4xNCw5LjYwOC05LjU4NywxOS4xMDVjLTAuMDA4LDAuMDY3LTAuMDE3LDAuMTMzLTAuMDExLDAuMjAyICAgYy0wLjAxMywwLjM2My0wLjAxNywwLjcyNy0wLjAwMywxLjA5MWMwLjM2OSwxMC4yNTYsOS45NzgsMTIuODIsMTAuMDc1LDEyLjg0NWMwLjA4MiwwLjAyMSwwLjE2NSwwLjAzMSwwLjI0NywwLjAzMSAgIHMwLjE2NS0wLjAxLDAuMjQ3LTAuMDMxYzAuMDk3LTAuMDI0LDkuNzA2LTIuNTg5LDEwLjA3NC0xMi44NDVjMC4wMTMtMC4zNjMsMC4wMDktMC43MjctMC4wMDMtMS4wODkgICBDMzQuODI1LDI2Ljg5NiwzNC44MTUsMjYuODI3LDM0LjgwNywyNi43NTZ6IE0xNi43ODMsMjMuMjVjMi4yMTksMi4wNTgsNS4zNjgsMy41MjEsNi43MTcsNC4wOTF2NC41NTIgICBjLTIuNDQ4LTEuMTk2LTYuMjE5LTMuMzQxLTcuMzAyLTUuMjI4QzE2LjI2OCwyNS41MjIsMTYuNDc3LDI0LjM3OCwxNi43ODMsMjMuMjV6IE0xOC44MDcsMTguMTU0ICAgYzEuNTEzLDEuNjg4LDMuNjAyLDIuNjQ2LDQuNjkzLDMuMDU5djMuOTRjLTEuNjU0LTAuNzYtNC40MjQtMi4yMTYtNi4wMTYtNC4wNDNDMTcuODcyLDIwLjA5NCwxOC4zMTgsMTkuMTAyLDE4LjgwNywxOC4xNTR6ICAgIE0zMS41MTgsMjEuMTA4Yy0xLjU5LDEuODI0LTQuMzYyLDMuMjgzLTYuMDE4LDQuMDQ0di0zLjkzOWMxLjA5Mi0wLjQxMywzLjE4My0xLjM3Miw0LjY5NS0zLjA2MiAgIEMzMC42ODQsMTkuMSwzMS4xMywyMC4wOTEsMzEuNTE4LDIxLjEwOHogTTI1LjUsMTkuMDQ3di04LjAwOGMxLjAzMywxLjI3OSwyLjM4NywzLjEsMy42NTEsNS4yMjkgICBDMjguMTk4LDE3LjY0MiwyNi42MTUsMTguNTQ0LDI1LjUsMTkuMDQ3eiBNMjUuNSwzMS44OTN2LTQuNTUyYzEuMzUtMC41NjksNC40OTktMi4wMzQsNi43MTktNC4wOTIgICBjMC4zMDUsMS4xMjgsMC41MTUsMi4yNzMsMC41ODQsMy40MTdDMzEuNzIsMjguNTQ5LDI3Ljk0OCwzMC42OTUsMjUuNSwzMS44OTN6IE0yMy41LDE5LjA1Yy0xLjExMy0wLjUtMi42OTQtMS4zOTktMy42NDktMi43NzkgICBjMS4yNjQtMi4xMjksMi42MTctMy45NSwzLjY0OS01LjIyOVYxOS4wNXogTTE2LjM4MywyOS44MjVjMi4zMjgsMS45ODMsNS42OSwzLjYyOSw3LjExNyw0LjI4MXY0LjQwMyAgIEMyMS40MDgsMzcuNjA1LDE3LjMzOCwzNS4xNzgsMTYuMzgzLDI5LjgyNXogTTI1LjUsMzguNTIxdi00LjQxNWMxLjQyOC0wLjY1Myw0Ljc5Mi0yLjMsNy4xMjEtNC4yODQgICBDMzEuNjcxLDM1LjIzMywyNy42MDEsMzcuNjM1LDI1LjUsMzguNTIxeiIvPg0KPC9nPg0KPC9zdmc+); }
   .seo__termometer {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDlweCIgaGVpZ2h0PSI0OXB4IiB2aWV3Qm94PSIwIDAgNDkgNDkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5IDQ5IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMzMjMyMzIiIGQ9Ik0yNC41LDBDMTAuOTY5LDAsMCwxMC45NjksMCwyNC41QzAsMzguMDMxLDEwLjk2OSw0OSwyNC41LDQ5QzM4LjAzMSw0OSw0OSwzOC4wMzEsNDksMjQuNSAgIEM0OSwxMC45NjksMzguMDMxLDAsMjQuNSwweiBNMjQuNSw0N0MxMi4wOTMsNDcsMiwzNi45MDYsMiwyNC41QzIsMTIuMDkzLDEyLjA5MywyLDI0LjUsMkMzNi45MDYsMiw0NywxMi4wOTMsNDcsMjQuNSAgIEM0NywzNi45MDYsMzYuOTA2LDQ3LDI0LjUsNDd6Ii8+DQoJPHBhdGggZmlsbD0iIzMyMzIzMiIgZD0iTTI4LjkzOCwxMy4xMjVjMC0yLjc3NC0yLjI1Ny01LjAzMS01LjAzMS01LjAzMXMtNS4wMzEsMi4yNTctNS4wMzEsNS4wMzF2MTQuNjQgICBjLTEuMjgxLDEuMzIyLTIsMy4wNjctMiw0LjkyM2MwLDMuOTI5LDMuMTk2LDcuMTI1LDcuMTI1LDcuMTI1czcuMTI1LTMuMTk2LDcuMTI1LTcuMTI1YzAtMS45NDItMC44MDItMy43OTEtMi4xODgtNS4xMjZWMTMuMTI1eiAgICBNMjkuMTI1LDMyLjY4OGMwLDIuODMtMi4yOTUsNS4xMjUtNS4xMjUsNS4xMjVjLTIuODMxLDAtNS4xMjUtMi4yOTUtNS4xMjUtNS4xMjVjMC0xLjY0NywwLjc5Mi0zLjA5OCwyLTQuMDM1VjEzLjEyNSAgIGMwLTEuNjc0LDEuMzU3LTMuMDMxLDMuMDMxLTMuMDMxYzEuNjc0LDAsMy4wMzEsMS4zNTcsMy4wMzEsMy4wMzF2MTUuMzcyQzI4LjI1NywyOS40MjUsMjkuMTI1LDMwLjk1MiwyOS4xMjUsMzIuNjg4eiIvPg0KCTxwYXRoIGZpbGw9IiMzMjMyMzIiIGQ9Ik0yNSwyOS41NTlWMTMuMTg4YzAtMC41NTItMC40NDctMS0xLTFjLTAuNTUyLDAtMSwwLjQ0OC0xLDF2MTYuMzcxYy0xLjE2MywwLjQxMy0yLDEuNTEyLTIsMi44MTYgICBjMCwxLjY1NywxLjM0MywzLDMsM2MxLjY1NywwLDMtMS4zNDMsMy0zQzI3LDMxLjA3LDI2LjE2MywyOS45NzIsMjUsMjkuNTU5eiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIxMiIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIxNiIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIyMCIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIyNCIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KPC9nPg0KPC9zdmc+); }
+  .seo__description {
+    margin-bottom: 0; }
 
 /*
 To change this license header, choose License Headers in Project Properties.
@@ -1377,6 +1382,9 @@ and open the template in the editor.
     Created on : 04.04.2018, 8:30:30
     Author     : Andrey
 */
+.other {
+  margin-bottom: 35px; }
+
 .news {
   position: relative; }
   .news img {
@@ -1396,6 +1404,60 @@ and open the template in the editor.
     font-size: 24px;
     line-height: 30px;
     max-width: 60%; }
+
+.map {
+  position: relative; }
+  .map__place {
+    height: 429px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    background-image: url(../images/map.jpg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover; }
+  .map__over-block {
+    top: 0;
+    position: absolute;
+    z-index: 100;
+    width: 1200px;
+    left: 50%;
+    margin-left: -600px;
+    padding: 0 13px;
+    pointer-events: none; }
+  .map__info {
+    color: #323232;
+    border-radius: 14px;
+    background-color: #fff;
+    pointer-events: auto;
+    margin-top: 62px;
+    margin-left: 13px;
+    padding: 28px 26px 28px 25px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px; }
+  .map__tel, .map__address {
+    margin-top: 1px;
+    display: inline-block;
+    width: 100%;
+    color: #323232;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: .003em; }
+  .map__tel {
+    margin-top: 4px;
+    margin-bottom: 2px; }
+  .map__btn {
+    margin-top: 7px;
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 12px;
+    font-size: 18px;
+    line-height: 24px;
+    border-radius: 24px;
+    letter-spacing: 0; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

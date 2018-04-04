@@ -19,7 +19,7 @@ and open the template in the editor.
 }
 
 .seo{
-    border-radius: 14px;
+    border-radius: $box-border-radius;
     background-image: url(../images/waferr.jpg);
     color: $color-text-grey;
     padding: 24px 20px 14px;

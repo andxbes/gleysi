@@ -7,7 +7,7 @@
     text-align: center;
     margin-bottom: 25px;
     img{
-        border-radius: 15px;
+        border-radius: $box-border-radius;
     }
     &__text{
         text-align: left;

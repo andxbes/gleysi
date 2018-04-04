@@ -945,10 +945,10 @@ and open the template in the editor.
     Created on : 26.03.2018, 20:28:55
     Author     : Andrey
 */
-form input[type="phone"],
-form input[type="email"],
-form input[type="password"],
-form input[type="text"] {
+input[type="phone"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
   display: block;
   width: 100%;
   border: 2px solid #d3d3d2;
@@ -959,16 +959,47 @@ form input[type="text"] {
   margin: 20px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-  form input[type="phone"]:hover,
-  form input[type="email"]:hover,
-  form input[type="password"]:hover,
-  form input[type="text"]:hover {
+  input[type="phone"]:hover,
+  input[type="email"]:hover,
+  input[type="password"]:hover,
+  input[type="text"]:hover {
     border-color: #9a9a9a; }
-  form input[type="phone"]:focus,
-  form input[type="email"]:focus,
-  form input[type="password"]:focus,
-  form input[type="text"]:focus {
+  input[type="phone"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="text"]:focus {
     border-color: #2e88e4; }
+
+.subscribe {
+  background: repeating-linear-gradient(135deg, #f8f7f4, #f8f7f4 7px, #92cdff 0, #92cdff 14px, #f8f7f4 0, #f8f7f4 21px, #fe9e90 0, #fe9e90 28px);
+  padding: 5px;
+  border-radius: 14px; }
+
+.subscribe__form {
+  border-radius: 14px;
+  background-color: #f8f7f4;
+  color: #323232;
+  padding: 28px 21px 14px; }
+
+.subscribe__attention {
+  margin-bottom: 36px; }
+
+.subscribe .subscribe__field {
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.subscribe .subscribe__field-text {
+  margin-top: 0;
+  width: 368px;
+  margin-right: 7px; }
+
+.subscribe .subscribe__btn {
+  width: 129px;
+  padding: 9px 20px 12px;
+  border-radius: 24px;
+  font-size: 18px;
+  line-height: 24px; }
 
 .head__navigation {
   padding: 14px 6px 10px; }
@@ -1184,7 +1215,7 @@ form input[type="text"] {
   text-align: center;
   margin-bottom: 25px; }
   .banner img {
-    border-radius: 15px; }
+    border-radius: 14px; }
   .banner__text {
     text-align: left;
     position: absolute;
@@ -1336,6 +1367,35 @@ and open the template in the editor.
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDlweCIgaGVpZ2h0PSI0OXB4IiB2aWV3Qm94PSIwIDAgNDkgNDkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5IDQ5IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMzMjMyMzIiIGQ9Ik0yNC41LDBDMTAuOTY5LDAsMCwxMC45NjksMCwyNC41QzAsMzguMDMxLDEwLjk2OSw0OSwyNC41LDQ5QzM4LjAzMSw0OSw0OSwzOC4wMzEsNDksMjQuNSAgIEM0OSwxMC45NjksMzguMDMxLDAsMjQuNSwweiBNMjQuNSw0N0MxMi4wOTMsNDcsMiwzNi45MDYsMiwyNC41QzIsMTIuMDkzLDEyLjA5MywyLDI0LjUsMkMzNi45MDYsMiw0NywxMi4wOTMsNDcsMjQuNSAgIEM0NywzNi45MDYsMzYuOTA2LDQ3LDI0LjUsNDd6Ii8+DQoJPHBhdGggZmlsbD0iIzMyMzIzMiIgZD0iTTM0LjgwNywyNi43NTZjLTAuNDUtOS40OTMtOS4xOTctMTguNjkzLTkuNTg2LTE5LjA5N2MtMC4wMTUtMC4wMTUtMC4wMzMtMC4wMjMtMC4wNDgtMC4wMzcgICBjLTAuMDM3LTAuMDM0LTAuMDc2LTAuMDYyLTAuMTE4LTAuMDljLTAuMDQyLTAuMDI5LTAuMDg0LTAuMDU1LTAuMTMtMC4wNzdjLTAuMDE4LTAuMDA5LTAuMDMyLTAuMDIyLTAuMDUxLTAuMDMgICBjLTAuMDI3LTAuMDExLTAuMDU2LTAuMDExLTAuMDgzLTAuMDJjLTAuMDQ4LTAuMDE1LTAuMDk1LTAuMDI3LTAuMTQ1LTAuMDM0Yy0wLjA1MS0wLjAwOC0wLjEwMS0wLjAxLTAuMTUyLTAuMDEgICBjLTAuMDQ1LDAtMC4wODksMC4wMDItMC4xMzQsMC4wMDhjLTAuMDU1LDAuMDA4LTAuMTA1LDAuMDIxLTAuMTU4LDAuMDM4Yy0wLjAyNSwwLjAwOC0wLjA1MiwwLjAwOC0wLjA3NiwwLjAxOCAgIGMtMC4wMTgsMC4wMDctMC4wMzEsMC4wMjEtMC4wNDksMC4wMjljLTAuMDQ3LDAuMDIyLTAuMDksMC4wNDktMC4xMzMsMC4wNzljLTAuMDQyLDAuMDI4LTAuMDgxLDAuMDU3LTAuMTE4LDAuMDkxICAgYy0wLjAxNSwwLjAxMy0wLjAzMywwLjAyMS0wLjA0NiwwLjAzNmMtMC4zODksMC40MDQtOS4xNCw5LjYwOC05LjU4NywxOS4xMDVjLTAuMDA4LDAuMDY3LTAuMDE3LDAuMTMzLTAuMDExLDAuMjAyICAgYy0wLjAxMywwLjM2My0wLjAxNywwLjcyNy0wLjAwMywxLjA5MWMwLjM2OSwxMC4yNTYsOS45NzgsMTIuODIsMTAuMDc1LDEyLjg0NWMwLjA4MiwwLjAyMSwwLjE2NSwwLjAzMSwwLjI0NywwLjAzMSAgIHMwLjE2NS0wLjAxLDAuMjQ3LTAuMDMxYzAuMDk3LTAuMDI0LDkuNzA2LTIuNTg5LDEwLjA3NC0xMi44NDVjMC4wMTMtMC4zNjMsMC4wMDktMC43MjctMC4wMDMtMS4wODkgICBDMzQuODI1LDI2Ljg5NiwzNC44MTUsMjYuODI3LDM0LjgwNywyNi43NTZ6IE0xNi43ODMsMjMuMjVjMi4yMTksMi4wNTgsNS4zNjgsMy41MjEsNi43MTcsNC4wOTF2NC41NTIgICBjLTIuNDQ4LTEuMTk2LTYuMjE5LTMuMzQxLTcuMzAyLTUuMjI4QzE2LjI2OCwyNS41MjIsMTYuNDc3LDI0LjM3OCwxNi43ODMsMjMuMjV6IE0xOC44MDcsMTguMTU0ICAgYzEuNTEzLDEuNjg4LDMuNjAyLDIuNjQ2LDQuNjkzLDMuMDU5djMuOTRjLTEuNjU0LTAuNzYtNC40MjQtMi4yMTYtNi4wMTYtNC4wNDNDMTcuODcyLDIwLjA5NCwxOC4zMTgsMTkuMTAyLDE4LjgwNywxOC4xNTR6ICAgIE0zMS41MTgsMjEuMTA4Yy0xLjU5LDEuODI0LTQuMzYyLDMuMjgzLTYuMDE4LDQuMDQ0di0zLjkzOWMxLjA5Mi0wLjQxMywzLjE4My0xLjM3Miw0LjY5NS0zLjA2MiAgIEMzMC42ODQsMTkuMSwzMS4xMywyMC4wOTEsMzEuNTE4LDIxLjEwOHogTTI1LjUsMTkuMDQ3di04LjAwOGMxLjAzMywxLjI3OSwyLjM4NywzLjEsMy42NTEsNS4yMjkgICBDMjguMTk4LDE3LjY0MiwyNi42MTUsMTguNTQ0LDI1LjUsMTkuMDQ3eiBNMjUuNSwzMS44OTN2LTQuNTUyYzEuMzUtMC41NjksNC40OTktMi4wMzQsNi43MTktNC4wOTIgICBjMC4zMDUsMS4xMjgsMC41MTUsMi4yNzMsMC41ODQsMy40MTdDMzEuNzIsMjguNTQ5LDI3Ljk0OCwzMC42OTUsMjUuNSwzMS44OTN6IE0yMy41LDE5LjA1Yy0xLjExMy0wLjUtMi42OTQtMS4zOTktMy42NDktMi43NzkgICBjMS4yNjQtMi4xMjksMi42MTctMy45NSwzLjY0OS01LjIyOVYxOS4wNXogTTE2LjM4MywyOS44MjVjMi4zMjgsMS45ODMsNS42OSwzLjYyOSw3LjExNyw0LjI4MXY0LjQwMyAgIEMyMS40MDgsMzcuNjA1LDE3LjMzOCwzNS4xNzgsMTYuMzgzLDI5LjgyNXogTTI1LjUsMzguNTIxdi00LjQxNWMxLjQyOC0wLjY1Myw0Ljc5Mi0yLjMsNy4xMjEtNC4yODQgICBDMzEuNjcxLDM1LjIzMywyNy42MDEsMzcuNjM1LDI1LjUsMzguNTIxeiIvPg0KPC9nPg0KPC9zdmc+); }
   .seo__termometer {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDlweCIgaGVpZ2h0PSI0OXB4IiB2aWV3Qm94PSIwIDAgNDkgNDkiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDQ5IDQ5IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxnPg0KCTxwYXRoIGZpbGw9IiMzMjMyMzIiIGQ9Ik0yNC41LDBDMTAuOTY5LDAsMCwxMC45NjksMCwyNC41QzAsMzguMDMxLDEwLjk2OSw0OSwyNC41LDQ5QzM4LjAzMSw0OSw0OSwzOC4wMzEsNDksMjQuNSAgIEM0OSwxMC45NjksMzguMDMxLDAsMjQuNSwweiBNMjQuNSw0N0MxMi4wOTMsNDcsMiwzNi45MDYsMiwyNC41QzIsMTIuMDkzLDEyLjA5MywyLDI0LjUsMkMzNi45MDYsMiw0NywxMi4wOTMsNDcsMjQuNSAgIEM0NywzNi45MDYsMzYuOTA2LDQ3LDI0LjUsNDd6Ii8+DQoJPHBhdGggZmlsbD0iIzMyMzIzMiIgZD0iTTI4LjkzOCwxMy4xMjVjMC0yLjc3NC0yLjI1Ny01LjAzMS01LjAzMS01LjAzMXMtNS4wMzEsMi4yNTctNS4wMzEsNS4wMzF2MTQuNjQgICBjLTEuMjgxLDEuMzIyLTIsMy4wNjctMiw0LjkyM2MwLDMuOTI5LDMuMTk2LDcuMTI1LDcuMTI1LDcuMTI1czcuMTI1LTMuMTk2LDcuMTI1LTcuMTI1YzAtMS45NDItMC44MDItMy43OTEtMi4xODgtNS4xMjZWMTMuMTI1eiAgICBNMjkuMTI1LDMyLjY4OGMwLDIuODMtMi4yOTUsNS4xMjUtNS4xMjUsNS4xMjVjLTIuODMxLDAtNS4xMjUtMi4yOTUtNS4xMjUtNS4xMjVjMC0xLjY0NywwLjc5Mi0zLjA5OCwyLTQuMDM1VjEzLjEyNSAgIGMwLTEuNjc0LDEuMzU3LTMuMDMxLDMuMDMxLTMuMDMxYzEuNjc0LDAsMy4wMzEsMS4zNTcsMy4wMzEsMy4wMzF2MTUuMzcyQzI4LjI1NywyOS40MjUsMjkuMTI1LDMwLjk1MiwyOS4xMjUsMzIuNjg4eiIvPg0KCTxwYXRoIGZpbGw9IiMzMjMyMzIiIGQ9Ik0yNSwyOS41NTlWMTMuMTg4YzAtMC41NTItMC40NDctMS0xLTFjLTAuNTUyLDAtMSwwLjQ0OC0xLDF2MTYuMzcxYy0xLjE2MywwLjQxMy0yLDEuNTEyLTIsMi44MTYgICBjMCwxLjY1NywxLjM0MywzLDMsM2MxLjY1NywwLDMtMS4zNDMsMy0zQzI3LDMxLjA3LDI2LjE2MywyOS45NzIsMjUsMjkuNTU5eiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIxMiIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIxNiIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIyMCIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KCTxyZWN0IHg9IjMxIiB5PSIyNCIgZmlsbD0iIzMyMzIzMiIgd2lkdGg9IjYiIGhlaWdodD0iMiIvPg0KPC9nPg0KPC9zdmc+); }
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 04.04.2018, 8:30:30
+    Author     : Andrey
+*/
+.news {
+  position: relative; }
+  .news img {
+    border-radius: 14px; }
+  .news__text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #323232;
+    padding: 22px 20px; }
+  .news__subtitle {
+    margin-bottom: 5px; }
+  .news__title {
+    display: inline-block;
+    color: #323232;
+    text-decoration: underline;
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 60%; }
 
 /*
 To change this license header, choose License Headers in Project Properties.

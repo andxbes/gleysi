@@ -10,31 +10,79 @@ and open the template in the editor.
 
 .search__form{
 
-    
-    
+
+
 }
 
-form{
-    input[type="phone"],
-    input[type="email"],
-    input[type="password"],
-    input[type="text"]{
-        
-        display: block;
-        width: 100%;
-        border: 2px solid #d3d3d2;
-        border-radius: 5px;
-        font-size: 14px;
-        padding: 9px 13px;
-        line-height: 24px;
-        margin: 20px 0;
-        box-sizing: border-box;
-        
-        &:hover{
-            border-color: #9a9a9a;
-        }
-        &:focus{
-            border-color: #2e88e4;
-        }
+
+input[type="phone"],
+input[type="email"],
+input[type="password"],
+input[type="text"]{
+
+    display: block;
+    width: 100%;
+    border: 2px solid #d3d3d2;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 9px 13px;
+    line-height: 24px;
+    margin: 20px 0;
+    box-sizing: border-box;
+
+    &:hover{
+        border-color: #9a9a9a;
     }
+    &:focus{
+        border-color: #2e88e4;
+    }
+}
+
+
+
+.subscribe{
+    
+    &{
+        $first_color: #f8f7f4;
+        $second_color: #92cdff ;
+        $third_color: #fe9e90;
+        $line_width: 7px;
+
+        background: repeating-linear-gradient(135deg,$first_color,$first_color ($line_width), $second_color 0, $second_color ($line_width*2),$first_color 0,$first_color ($line_width*3),$third_color 0,$third_color ($line_width*4));
+        padding: 5px;
+        border-radius: $box-border-radius;
+    }
+
+    &__form{
+        border-radius: $box-border-radius;
+        background-color: #f8f7f4;
+        color: $color-text-grey;
+        padding: 28px 21px 14px;
+    }
+    &__attention{
+        margin-bottom: 36px;
+    }
+    
+    & &__field{
+        display: inline-block;
+        box-sizing: border-box;
+    }
+  
+    
+    & &__field-text{
+        margin-top: 0;
+        width: 368px;
+        margin-right: 7px;
+        
+    }
+    
+    & &__btn{
+        width: 129px;
+        padding: 9px 20px 12px;
+        border-radius: 24px;
+        font-size: 18px;
+        line-height: 24px;
+
+    }
+
 }

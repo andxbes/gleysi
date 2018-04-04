@@ -12,18 +12,32 @@
     }
 
     &__over-block{
-        
-        top:0;
-        position: absolute;
-        z-index: 100;
-        width: $grid-max-width;
-        left: 50%;
-        margin-left: -($grid-max-width/2);
+
+
+        margin: 0;
+        @media #{$breakpoint-medium}{
+
+            top:0;
+            position: absolute;
+            z-index: 100;
+            width: 100%;
+            left:0;
+
+        }
+        @media screen and (min-width:$grid-max-width){
+            max-width: $grid-max-width;
+            left: 50%;
+            margin-left: -($grid-max-width/2);
+        }
+
         padding: 0 $grid-padding;
         pointer-events: none;
+
+
+
     }
     &__info{
-       
+
         color:$color-text-grey;
         border-radius: $box-border-radius;
         background-color: #fff;
@@ -34,7 +48,7 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 20px;
-        
+
     }
 
     &__tel,
@@ -63,5 +77,5 @@
         border-radius: 24px;
         letter-spacing: 0;
     }
-  
+
 }

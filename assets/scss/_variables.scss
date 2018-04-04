@@ -7,8 +7,9 @@ $grid-padding: 13px;
  
  
 // breakpoints
-$breakpoint-small: "only screen and (min-width: 460px)";
-$breakpoint-medium: "only screen and (min-width: 900px)";
+$breakpoint-small: "screen and (min-width: 460px)";
+$breakpoint-medium: "screen and (min-width: 900px)";
+$breakpoint-lg: "screen and (min-width: 1200px)";
 
 
 //colors

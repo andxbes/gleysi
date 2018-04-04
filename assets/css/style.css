@@ -653,7 +653,7 @@ img {
 .col-sm-48 {
   width: 100%; }
 
-@media only screen and (min-width: 460px) {
+@media screen and (min-width: 900px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -755,7 +755,7 @@ img {
   .col-md-48 {
     width: 100%; } }
 
-@media only screen and (min-width: 900px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 100%;
     margin: 0 auto;
@@ -1417,14 +1417,21 @@ and open the template in the editor.
     background-position: 50%;
     background-size: cover; }
   .map__over-block {
-    top: 0;
-    position: absolute;
-    z-index: 100;
-    width: 1200px;
-    left: 50%;
-    margin-left: -600px;
+    margin: 0;
     padding: 0 13px;
     pointer-events: none; }
+    @media screen and (min-width: 900px) {
+      .map__over-block {
+        top: 0;
+        position: absolute;
+        z-index: 100;
+        width: 100%;
+        left: 0; } }
+    @media screen and (min-width: 1200px) {
+      .map__over-block {
+        max-width: 1200px;
+        left: 50%;
+        margin-left: -600px; } }
   .map__info {
     color: #323232;
     border-radius: 14px;

@@ -57,7 +57,7 @@ img {
 }  
 
 
-@media #{$breakpoint-small} {
+@media #{$breakpoint-medium} {
     
     .container {      
         width: 100%;
@@ -73,7 +73,7 @@ img {
 
 }
 
-@media #{$breakpoint-medium} {
+@media #{$breakpoint-lg} {
     .container {      
         width: 100%;
         margin: 0 auto;

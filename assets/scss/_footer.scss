@@ -1,10 +1,72 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 25.03.2018, 11:13:39
-    Author     : Andrey
-*/
+.footer{
 
+}
+.social-links{
+    margin: 36px 0;
+    a{
+        $size: 37px;
+        display: inline-block;
+        width: $size;
+        height: $size;
+        box-sizing: border-box;
+        border-radius: 50%;
+        border:2px solid rgba(255,255,255,.8);
+        /*background-color: #e6ebe9;*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:0 7px 0 2px;
+        opacity: 0.8;
+        &:hover{
+            opacity: 1;
+        }
+        &:active{
+            opacity: 0.8;
+            border-color: rgba(0,0,0,.0);
+        }
+
+    }
+
+    &__tw{
+        background-image: url(../images/tw.svg);
+    }
+    &__in{
+        background-image: url(../images/in.svg);
+    }
+    &__fb{
+        background-image: url(../images/fb.svg);
+    }
+    &__vk{
+        background-image: url(../images/vk.svg);
+    }
+
+
+}
+
+.about-links{
+    margin: 30px 0;
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+    }
+    li{
+        width: 50%;
+        padding-left:32px;
+        a{
+            font-size: 13px;
+            line-height: 18px;
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, 0.2);
+        }
+    }
+    .active{
+        &{
+            background-image: url(../images/heart.svg);
+            background-repeat: no-repeat;
+            background-position: 10px 7px;
+        }
+        a{
+            font-weight: bold;
+        }
+    }
+}

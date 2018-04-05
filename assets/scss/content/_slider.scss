@@ -1,13 +1,15 @@
 $slider-bottom-underspice: 206px;
 .slider{
-    
+
+
     &__buttons{
         text-align: center;
         font-size: 34px;
     }
     &__text{
         position: absolute;
-        bottom: ($slider-bottom-underspice+40);
+        /*        bottom: ($slider-bottom-underspice+40);*/
+        top: 391px;
         width: 100%;
     }
     &__image{
@@ -24,20 +26,29 @@ $slider-bottom-underspice: 206px;
         margin: auto;
         margin-bottom: 32px;
     }
-    &  ~ *{
-        position: relative;
-        top: -$slider-bottom-underspice;
+    @media #{$breakpoint-lg}{
+
+        min-height: 887px;
+        margin-bottom: 20px;
+        &  ~ .banners {
+            position: absolute;
+            top: 648px;
+        }
     }
+
 }
 
 .slick-dots{
     position: absolute;
-    bottom: ($slider-bottom-underspice+63);
+    /*    bottom: ($slider-bottom-underspice+63);*/
+    top: 564px;
     margin-left: 14px;
     list-style: none;
+    line-height:0;
     li{
         display: inline-block;
         margin-right: 8px;
+        line-height:0;
         button{
             $size:  21px;
             display: inline-block;

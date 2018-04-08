@@ -8,8 +8,18 @@
     
     max-width: 560px;
     margin: 0 auto 25px;
+    
+  
+    figure{
+        margin: 0;
+        line-height: 0;
+        overflow-x: hidden;
+        min-height: 229px;
+    }
     img{
         border-radius: $box-border-radius;
+        min-height: 229px;
+        object-fit: cover;
     }
     &__text{
         text-align: left;
@@ -31,6 +41,7 @@
         padding: 8px 23px 12px 22px;
         letter-spacing: 0;
         border-radius: 30px; 
+        bottom: 24px;
     }
     
     &__header{
@@ -47,5 +58,15 @@
         font-weight: bold;
         word-spacing: .02em;
     }
-    
+
+
+}
+
+@media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+    .banners.container{
+         padding: 0 10px;
+    }
+    .banners>*{
+        padding: 0 10px;
+    }  
 }

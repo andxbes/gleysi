@@ -1,6 +1,6 @@
 $slider-bottom-underspice: 206px;
 .slider{
-
+  
 
     &__buttons{
         text-align: center;
@@ -14,6 +14,7 @@ $slider-bottom-underspice: 206px;
     }
     &__image{
         margin: 0 auto;
+        object-fit: cover;
     }
     &__item{
         text-align: center;
@@ -26,7 +27,7 @@ $slider-bottom-underspice: 206px;
         margin: auto;
         margin-bottom: 32px;
     }
-    @media #{$breakpoint-lg}{
+    @media #{$breakpoint-md}{
 
         min-height: 887px;
         margin-bottom: 20px;
@@ -45,6 +46,10 @@ $slider-bottom-underspice: 206px;
     margin-left: 14px;
     list-style: none;
     line-height:0;
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        margin-left: 7px;
+        top: 563px;
+    }
     li{
         display: inline-block;
         margin-right: 8px;

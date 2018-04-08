@@ -57,12 +57,11 @@ img {
 }  
 
 
-@media #{$breakpoint-medium} {
+@media #{$breakpoint-md} {
     
     .container {      
-        width: 100%;
-        margin: 0 auto;
-        max-width: $grid-max-width;     
+       
+        max-width: $grid-max-width-md;     
     }
 
     @for $i from 1 through $grid-columns {      
@@ -75,9 +74,8 @@ img {
 
 @media #{$breakpoint-lg} {
     .container {      
-        width: 100%;
-        margin: 0 auto;
-        max-width: $grid-max-width;     
+       
+        max-width: $grid-max-width-lg;     
     }
     @for $i from 1 through $grid-columns {      
         .col-lg-#{$i} {         
@@ -87,4 +85,8 @@ img {
 }
 .hidden{
     display: none;
+}
+
+.container .container{
+   @extend .row;
 }

@@ -13,7 +13,6 @@ and open the template in the editor.
     display: inline-block;
     width: $size;
     height: $size;
-    /*margin-right: 7px;*/
     background-repeat: no-repeat;
 
 }
@@ -24,19 +23,39 @@ and open the template in the editor.
     color: $color-text-grey;
     padding: 24px 20px 14px;
     margin-bottom: 40px;
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        padding: 25px 18px 13px 22px;
+        margin-left: -6px;
+        margin-right: -6px;
+    }
+    
+    
+    
 
     &__title{
         display: inline-block;
         /*width: 90%;*/
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            margin-bottom: 10px;
+            margin-left: -4px;
+        }
 
     }
     &__item{
         display: flex;
         justify-content: space-around;
-        margin-bottom: 10px;
+        padding-bottom: 10px;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            padding-left: ($grid-padding - 4px);
+            padding-right: ($grid-padding - 4px);
+            padding-bottom: 11px;
+        }
+        
         p{
             padding-top: 12px;
         }
+        
+        
     }
 
     &__ice-cream{

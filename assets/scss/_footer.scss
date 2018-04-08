@@ -3,6 +3,9 @@
 }
 .social-links{
     margin: 36px 0;
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        padding: 0 4px;
+    }
     a{
         $size: 37px;
         display: inline-block;
@@ -64,6 +67,9 @@
             background-image: url(../images/heart.svg);
             background-repeat: no-repeat;
             background-position: 0px 7px;
+            @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+                background-position: 0px 6px;
+            }
         }
         a{
             font-weight: bold;
@@ -71,7 +77,12 @@
     }
     
     ul:first-child{
-        margin-left: 23px;
+        @media screen and (min-width:$grid-max-width-lg){
+            margin-left: 23px;
+        }
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            margin-left: 10px;
+        }
     }
 }
 
@@ -79,6 +90,10 @@
     padding: 18px  0 0 4px ;
     font-size: 12px;
     line-height: 18px;
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        padding-left: 10px;
+        margin-right: -$grid-padding;
+    }
     
     img{
         width: 112px;

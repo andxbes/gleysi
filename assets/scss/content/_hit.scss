@@ -1,7 +1,10 @@
 
 
 .hits {
-
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        padding:0 ($grid-padding - 3);
+        
+    }
     
 }
 /**
@@ -13,6 +16,9 @@
    
    
     margin-bottom:-43px;
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        margin-bottom:-41px;
+    }
 
     &__wraper{
         display: block;
@@ -20,12 +26,20 @@
         text-align:center;
         border-radius:5px;
         padding:10px $grid-padding;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            padding:8px ($grid-padding - 5 );
+        }
 
         
         
     }
     &__img-wrapper{
         position: relative;
+        
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            margin:0 2px;
+        }
+        
         &::before{
             $size:61px;
             border-radius: 50%;
@@ -52,6 +66,9 @@
         font-size: 47px;
         text-shadow: 0px 1px 3px rgba(0,0,0,.5);
         letter-spacing: -1px;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            top: 154px;
+        }
         
 
     }
@@ -63,6 +80,10 @@
         text-decoration: underline;
         text-decoration-color: rgba(255,255,255,.2);
         margin-bottom: 16px;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            margin-left: 5px;
+            margin-right: 5px;
+        }
 
     }
     &__btn{

@@ -8,17 +8,39 @@ and open the template in the editor.
     Author     : Andrey
 */
 .other{
-    margin-bottom: 35px;
+    
+    &>*{
+        margin-bottom: 40px;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            margin-bottom: 39px;
+        }
+    }
+    &,
+    &>*{
+        
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            padding:0 ($grid-padding - 3px);
+
+        }
+    }
 }
 .news{
     position: relative;
 
-    
-    
-    img{
+
+    figure{
         border-radius: $box-border-radius;
+        margin: 0;
+        line-height: 0;
+        overflow: hidden;
+        height: 220px;
     }
-    
+    img{
+        object-fit: cover;
+        width: 100%;
+        min-height: 100%;
+    }
+
     &__text{
         position: absolute;
         top: 0;

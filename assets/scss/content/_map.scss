@@ -15,7 +15,7 @@
 
 
         margin: 0;
-        @media #{$breakpoint-medium}{
+        @media #{$breakpoint-md}{
 
             top:0;
             position: absolute;
@@ -24,10 +24,16 @@
             left:0;
 
         }
-        @media screen and (min-width:$grid-max-width){
-            max-width: $grid-max-width;
+        @media screen and (min-width:$grid-max-width-lg){
+            max-width: $grid-max-width-lg;
             left: 50%;
-            margin-left: -($grid-max-width/2);
+            margin-left: -($grid-max-width-lg/2);
+        }
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            max-width: $grid-max-width-md;
+            left: 50%;
+            margin-left: -($grid-max-width-md/2);
+            padding:0 ($grid-padding - 7px);
         }
 
         padding: 0 $grid-padding;
@@ -48,6 +54,9 @@
         font-weight: 300;
         font-size: 14px;
         line-height: 20px;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+             margin-left: 23px;
+        }
 
     }
 

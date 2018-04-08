@@ -11,10 +11,20 @@
         &:hover{
             opacity: 0.8;
         }
+        @media screen and (max-width: $grid-max-width-lg){
+            margin-left:-6px;
+        }
     }
 
     .user-block{
-        padding-left: 12px;
+        
+        @media screen and (min-width:$grid-max-width-lg){
+            padding-left: 12px;
+        }
+        @media screen and (min-width:$grid-max-width-md){
+            padding-left: 7px;
+        }
+        
 
         @extend %clearfix;
         &>*{
@@ -97,6 +107,11 @@
 
 .cart {
     min-width: 117px;
+    
+    @media screen and (max-width:$grid-max-width-lg){
+        
+    }
+    
     .ico__place{
 
         fill: rgba(0,0,0,0);
@@ -117,6 +132,11 @@
 }
 
 .contacts {
+    
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        margin-right: -7px;
+    }
+    
     padding-top: 0px;
     font-weight: bold;
     &__time{

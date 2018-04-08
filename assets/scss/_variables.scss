@@ -2,14 +2,19 @@
 // grid variables
 $grid-columns: 48;
 $grid-max-width: 1200px;
+$grid-max-width-lg:1200px;
+$grid-max-width-md:900px;
+$grid-max-width-sm:460px;
+
 $grid-padding: 13px;
 
  
  
 // breakpoints
-$breakpoint-small: "screen and (min-width: 460px)";
-$breakpoint-medium: "screen and (min-width: 900px)";
-$breakpoint-lg: "screen and (min-width: 1200px)";
+$breakpoint-sm: "screen and (min-width: "+$grid-max-width-sm+")";
+$breakpoint-md: "screen and (min-width: "+$grid-max-width-md+")";
+$breakpoint-lg: "screen and (min-width: "+$grid-max-width-lg+")";
+
 
 
 //colors

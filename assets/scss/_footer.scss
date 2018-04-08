@@ -45,13 +45,13 @@
 .about-links{
     margin: 30px 0;
     ul{
-        display: flex;
-        flex-wrap: wrap;
         list-style: none;
+        float: left;
+        margin-left: 9px;
     }
     li{
-        width: 50%;
-        padding-left:32px;
+        width: auto;
+        padding-left:22px;
         a{
             font-size: 13px;
             line-height: 18px;
@@ -63,10 +63,24 @@
         &{
             background-image: url(../images/heart.svg);
             background-repeat: no-repeat;
-            background-position: 10px 7px;
+            background-position: 0px 7px;
         }
         a{
             font-weight: bold;
         }
+    }
+    
+    ul:first-child{
+        margin-left: 23px;
+    }
+}
+
+.copyright{
+    padding: 18px  0 0 4px ;
+    font-size: 12px;
+    line-height: 18px;
+    
+    img{
+        width: 112px;
     }
 }

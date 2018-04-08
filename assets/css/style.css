@@ -1509,17 +1509,12 @@ and open the template in the editor.
 .about-links {
   margin: 30px 0; }
   .about-links ul {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    list-style: none; }
+    list-style: none;
+    float: left;
+    margin-left: 9px; }
   .about-links li {
-    width: 50%;
-    padding-left: 32px; }
+    width: auto;
+    padding-left: 22px; }
     .about-links li a {
       font-size: 13px;
       line-height: 18px;
@@ -1529,9 +1524,18 @@ and open the template in the editor.
   .about-links .active {
     background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTVweCIgaGVpZ2h0PSIxM3B4IiB2aWV3Qm94PSIwIDAgMTUgMTMiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE1IDEzIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xMC43OTksMGMtMS4zNSwwLTIuNTUxLDAuNjUtMy4zLDEuNjYxQzYuNzUsMC42NSw1LjU0OSwwLDQuMTk5LDBDMS44NzUsMCwwLDEuODA2LDAsNC4wNDQgIEMwLDcuMjIzLDcuNDk5LDEzLDcuNDk5LDEzczcuNDk5LTUuNzc3LDcuNDk5LTguOTU2QzE0Ljk5OCwxLjgwNiwxMy4xMjMsMCwxMC43OTksMHoiLz4NCjwvc3ZnPg==);
     background-repeat: no-repeat;
-    background-position: 10px 7px; }
+    background-position: 0px 7px; }
   .about-links .active a {
     font-weight: bold; }
+  .about-links ul:first-child {
+    margin-left: 23px; }
+
+.copyright {
+  padding: 18px  0 0 4px;
+  font-size: 12px;
+  line-height: 18px; }
+  .copyright img {
+    width: 112px; }
 
 body, .head__navigation .menu > li {
   font-family: Roboto;

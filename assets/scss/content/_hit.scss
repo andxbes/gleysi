@@ -70,6 +70,10 @@
             top: 154px;
         }
         
+        @media screen and (max-width:$grid-max-width-md){
+            left: 30%;
+        }
+        
 
     }
 

@@ -1,5 +1,4 @@
 
-
 .header{
     padding-top: 10px;
     padding-bottom: 10px;
@@ -24,6 +23,9 @@
         @media screen and (min-width:$grid-max-width-md){
             padding-left: 7px;
         }
+        @media screen and (max-width:$grid-max-width-md ){
+            display:none;
+        }
         
 
         @extend %clearfix;
@@ -36,9 +38,11 @@
 }
 
 .header-main{
+    @media screen and (min-width:$grid-max-width-sm){
     position: absolute;
     margin: auto;
     width: 100%;   
+    }
 }
 
 .search,

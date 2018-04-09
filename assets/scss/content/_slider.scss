@@ -5,12 +5,19 @@ $slider-bottom-underspice: 206px;
     &__buttons{
         text-align: center;
         font-size: 34px;
+        @media screen and (max-width:$grid-max-width-sm){
+            font-size: 20px;
+        }
     }
     &__text{
         position: absolute;
         /*        bottom: ($slider-bottom-underspice+40);*/
         top: 391px;
         width: 100%;
+        @media screen and (max-width:$grid-max-width-md ){
+            top:auto;
+            bottom: 80px;
+        }
     }
     &__image{
         margin: 0 auto;
@@ -26,6 +33,14 @@ $slider-bottom-underspice: 206px;
         max-width: 700px;
         margin: auto;
         margin-bottom: 32px;
+        @media screen and (max-width:$grid-max-width-md ){
+            font-size:30px;
+            line-height: 30px;
+        }
+        @media screen and (max-width:$grid-max-width-sm){
+            display: none;
+        }
+
     }
     @media #{$breakpoint-md}{
 
@@ -49,6 +64,10 @@ $slider-bottom-underspice: 206px;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
         margin-left: 7px;
         top: 563px;
+    }
+    @media screen and (max-width:$grid-max-width-md ){
+            top:auto;
+            bottom:40px;
     }
     li{
         display: inline-block;

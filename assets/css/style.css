@@ -1076,6 +1076,9 @@ input[type="text"] {
       .head__navigation .menu__sub a {
         color: inherit;
         font-weight: normal; }
+  @media screen and (max-width: 900px) {
+    .head__navigation {
+      display: none; } }
 
 .header {
   padding-top: 10px;
@@ -1095,14 +1098,18 @@ input[type="text"] {
   @media screen and (min-width: 900px) {
     .header .user-block {
       padding-left: 7px; } }
+  @media screen and (max-width: 900px) {
+    .header .user-block {
+      display: none; } }
   .header .user-block > * {
     margin: 12px 5px;
     float: left; }
 
-.header-main {
-  position: absolute;
-  margin: auto;
-  width: 100%; }
+@media screen and (min-width: 460px) {
+  .header-main {
+    position: absolute;
+    margin: auto;
+    width: 100%; } }
 
 .search, .login,
 .login,
@@ -1184,12 +1191,19 @@ input[type="text"] {
 .slider__buttons {
   text-align: center;
   font-size: 34px; }
+  @media screen and (max-width: 460px) {
+    .slider__buttons {
+      font-size: 20px; } }
 
 .slider__text {
   position: absolute;
   /*        bottom: ($slider-bottom-underspice+40);*/
   top: 391px;
   width: 100%; }
+  @media screen and (max-width: 900px) {
+    .slider__text {
+      top: auto;
+      bottom: 80px; } }
 
 .slider__image {
   margin: 0 auto;
@@ -1206,6 +1220,13 @@ input[type="text"] {
   max-width: 700px;
   margin: auto;
   margin-bottom: 32px; }
+  @media screen and (max-width: 900px) {
+    .slider__title {
+      font-size: 30px;
+      line-height: 30px; } }
+  @media screen and (max-width: 460px) {
+    .slider__title {
+      display: none; } }
 
 @media screen and (min-width: 900px) {
   .slider {
@@ -1226,6 +1247,10 @@ input[type="text"] {
     .slick-dots {
       margin-left: 7px;
       top: 563px; } }
+  @media screen and (max-width: 900px) {
+    .slick-dots {
+      top: auto;
+      bottom: 40px; } }
   .slick-dots li {
     display: inline-block;
     margin-right: 8px;
@@ -1287,6 +1312,9 @@ input[type="text"] {
     line-height: 22px;
     font-weight: bold;
     word-spacing: .02em; }
+    @media screen and (max-width: 460px) {
+      .banner__description {
+        display: none; } }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   .banners.container {
@@ -1343,6 +1371,9 @@ input[type="text"] {
     @media screen and (max-width: 1200px) and (min-width: 900px) {
       .hit__price {
         top: 154px; } }
+    @media screen and (max-width: 900px) {
+      .hit__price {
+        left: 30%; } }
   .hit__title {
     font-size: 16px;
     line-height: 22px;

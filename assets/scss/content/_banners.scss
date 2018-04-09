@@ -57,6 +57,9 @@
         line-height: 22px;
         font-weight: bold;
         word-spacing: .02em;
+        @media screen and (max-width: $grid-max-width-sm){
+            display: none;
+        }
     }
 
 

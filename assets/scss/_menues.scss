@@ -103,6 +103,9 @@
         }
 
     }
+    @media screen and (max-width:$grid-max-width-md ){
+        display:none;
+    }
 
 
 }

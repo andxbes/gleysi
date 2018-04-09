@@ -995,21 +995,26 @@ input[type="text"] {
 
 .subscribe .subscribe__field-text {
   margin-top: 0;
-  width: 72.3%;
+  width: 100%;
   margin-right: 7px; }
+  @media screen and (min-width: 1200px) {
+    .subscribe .subscribe__field-text {
+      width: 72.3%; } }
   @media screen and (max-width: 1200px) and (min-width: 900px) {
     .subscribe .subscribe__field-text {
       width: 62.4%; } }
 
 .subscribe .subscribe__btn {
-  width: 25.3%;
   padding: 9px 20px 12px;
   border-radius: 24px;
   font-size: 18px;
   line-height: 24px; }
+  @media screen and (min-width: 1200px) {
+    .subscribe .subscribe__btn {
+      width: 25.3%; } }
   @media screen and (max-width: 1200px) and (min-width: 900px) {
     .subscribe .subscribe__btn {
-      min-width: 34.5%; } }
+      width: 34.5%; } }
 
 .head__navigation {
   padding: 14px 6px 10px; }
@@ -1609,7 +1614,8 @@ and open the template in the editor.
   margin: 36px 0; }
   @media screen and (max-width: 1200px) and (min-width: 900px) {
     .social-links {
-      padding: 0 4px; } }
+      padding: 0 4px;
+      margin: 36px 0 20px; } }
   @media screen and (max-width: 900px) {
     .social-links {
       text-align: center;
@@ -1643,6 +1649,9 @@ and open the template in the editor.
 
 .about-links {
   margin: 30px 0; }
+  @media screen and (max-width: 1200px) and (min-width: 900px) {
+    .about-links {
+      margin: 30px 0 20px; } }
   @media screen and (max-width: 900px) {
     .about-links {
       text-align: center;

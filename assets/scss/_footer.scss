@@ -5,10 +5,11 @@
     margin: 36px 0;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
         padding: 0 4px;
+        margin: 36px 0 20px;
     }
     @media screen and (max-width: $grid-max-width-md){
         text-align:center;
-        margin: 20px 0;
+        margin:  20px 0 ;
     }
 
     a{
@@ -52,6 +53,10 @@
 
 .about-links{
     margin: 30px 0;
+     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        
+        margin: 30px 0 20px;
+    }
 
     @media screen and (max-width: $grid-max-width-md){
         text-align: center;

@@ -49,11 +49,16 @@
         background-color: #fff;
         pointer-events: auto;
         margin-top: 62px;
-        margin-left: 13px;
+        
         padding: 28px 26px 28px 25px; 
         font-weight: 300;
         font-size: 14px;
         line-height: 20px;
+        
+        @media screen and (min-width:$grid-max-width-lg){
+            margin-left: 13px;
+        }
+        
         @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
              margin-left: 23px;
         }

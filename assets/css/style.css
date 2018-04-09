@@ -1541,11 +1541,13 @@ and open the template in the editor.
     background-color: #fff;
     pointer-events: auto;
     margin-top: 62px;
-    margin-left: 13px;
     padding: 28px 26px 28px 25px;
     font-weight: 300;
     font-size: 14px;
     line-height: 20px; }
+    @media screen and (min-width: 1200px) {
+      .map__info {
+        margin-left: 13px; } }
     @media screen and (max-width: 1200px) and (min-width: 900px) {
       .map__info {
         margin-left: 23px; } }
@@ -1577,6 +1579,10 @@ and open the template in the editor.
   @media screen and (max-width: 1200px) and (min-width: 900px) {
     .social-links {
       padding: 0 4px; } }
+  @media screen and (max-width: 900px) {
+    .social-links {
+      text-align: center;
+      margin: 20px 0; } }
   .social-links a {
     display: inline-block;
     width: 37px;
@@ -1606,10 +1612,19 @@ and open the template in the editor.
 
 .about-links {
   margin: 30px 0; }
+  @media screen and (max-width: 900px) {
+    .about-links {
+      text-align: center;
+      margin: 20px 0; } }
   .about-links ul {
     list-style: none;
-    float: left;
     margin-left: 9px; }
+    @media screen and (min-width: 900px) {
+      .about-links ul {
+        float: left; } }
+    @media screen and (max-width: 900px) {
+      .about-links ul {
+        display: inline-block; } }
   .about-links li {
     width: auto;
     padding-left: 22px; }
@@ -1643,6 +1658,9 @@ and open the template in the editor.
     .copyright {
       padding-left: 10px;
       margin-right: -13px; } }
+  @media screen and (max-width: 900px) {
+    .copyright {
+      text-align: center; } }
   .copyright img {
     width: 112px; }
 

@@ -6,6 +6,11 @@
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
         padding: 0 4px;
     }
+    @media screen and (max-width: $grid-max-width-md){
+        text-align:center;
+        margin: 20px 0;
+    }
+
     a{
         $size: 37px;
         display: inline-block;
@@ -47,10 +52,22 @@
 
 .about-links{
     margin: 30px 0;
+
+    @media screen and (max-width: $grid-max-width-md){
+        text-align: center;
+         margin: 20px 0;
+    }
+
     ul{
         list-style: none;
-        float: left;
+        
         margin-left: 9px;
+        @media screen and (min-width: $grid-max-width-md){
+            float: left;
+        }
+        @media screen and (max-width: $grid-max-width-md){
+            display: inline-block;
+        }
     }
     li{
         width: auto;
@@ -75,7 +92,7 @@
             font-weight: bold;
         }
     }
-    
+
     ul:first-child{
         @media screen and (min-width:$grid-max-width-lg){
             margin-left: 23px;
@@ -94,7 +111,10 @@
         padding-left: 10px;
         margin-right: -$grid-padding;
     }
-    
+    @media screen and (max-width: $grid-max-width-md){
+        text-align: center;
+    }
+
     img{
         width: 112px;
     }

@@ -48,6 +48,8 @@ $slider-bottom-underspice: 206px;
         margin-bottom: 20px;
         &  ~ .banners {
             position: absolute;
+            left:0;
+            right: 0;
             top: 648px;
         }
     }

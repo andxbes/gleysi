@@ -69,7 +69,8 @@
     .banners.container{
          padding: 0 10px;
     }
-    .banners>*{
+    .banners>*,
+    .banners>*>*{
         padding: 0 10px;
     }  
 }

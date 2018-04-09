@@ -452,12 +452,12 @@ and open the template in the editor.
     Created on : 17.03.2018, 19:49:54
     Author     : Andrey
 */
-.container, .row, .container .container, .header .user-block, .search form, .login form {
+.container, .row, .header .user-block, .search form, .login form {
   *zoom: 1; }
-  .container:before, .row:before, .container .container:before, .header .user-block:before, .search form:before, .login form:before, .container:after, .row:after, .container .container:after, .header .user-block:after, .search form:after, .login form:after {
+  .container:before, .row:before, .header .user-block:before, .search form:before, .login form:before, .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after {
     content: " ";
     display: table; }
-  .container:after, .row:after, .container .container:after, .header .user-block:after, .search form:after, .login form:after {
+  .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after {
     clear: both; }
 
 /*
@@ -488,7 +488,7 @@ img {
   padding-left: 13px;
   padding-right: 13px; }
 
-.row, .container .container {
+.row {
   margin-left: -13px;
   margin-right: -13px; }
 
@@ -1239,6 +1239,8 @@ input[type="text"] {
     margin-bottom: 20px; }
     .slider ~ .banners {
       position: absolute;
+      left: 0;
+      right: 0;
       top: 648px; } }
 
 .slick-dots {
@@ -1324,7 +1326,8 @@ input[type="text"] {
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   .banners.container {
     padding: 0 10px; }
-  .banners > * {
+  .banners > *,
+  .banners > * > * {
     padding: 0 10px; } }
 
 @media screen and (max-width: 1200px) and (min-width: 900px) {

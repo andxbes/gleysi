@@ -57,6 +57,7 @@
 }
 
 .search{
+    cursor: pointer;
     min-width: 32px;
     .hidden{
         position: absolute;
@@ -122,8 +123,7 @@
 
     }
     &.cart-not-empty{
-        /*         background-color: #fff;
-                 color:#000;*/
+        cursor: pointer;
         .ico{
             fill: #000;
         }

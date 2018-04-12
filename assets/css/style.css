@@ -1038,7 +1038,7 @@ input[type="text"] {
         background-color: #ededed; }
       .head__navigation .menu > li > a {
         border-radius: 16px; }
-      .head__navigation .menu > li.curent {
+      .head__navigation .menu > li.curent > a {
         background-color: #d07058;
         color: #fff; }
     .head__navigation .menu a {
@@ -1126,6 +1126,7 @@ input[type="text"] {
     display: block; }
 
 .search, .login {
+  cursor: pointer;
   min-width: 32px; }
   .search .hidden, .login .hidden {
     position: absolute;
@@ -1167,8 +1168,7 @@ input[type="text"] {
   .cart .ico__place {
     fill: transparent; }
   .cart.cart-not-empty {
-    /*         background-color: #fff;
-                 color:#000;*/ }
+    cursor: pointer; }
     .cart.cart-not-empty .ico {
       fill: #000; }
     .cart.cart-not-empty .ico__place {

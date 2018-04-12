@@ -41,8 +41,10 @@
 
             }
             &.curent{
-                background-color: #d07058;
-                color:#fff;
+                & > a{
+                    background-color: #d07058;
+                    color:#fff;
+                }
             }
         }
 

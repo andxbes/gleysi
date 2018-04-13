@@ -2,7 +2,7 @@
 
 
 
-.hits {
+.goods {
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
         padding:0 ($grid-padding - 3);
 
@@ -47,14 +47,14 @@
             margin:0 2px;
         }
 
-        
+
         img{
             border-radius: 50%;
             margin-bottom: 7px;
         }
 
     }
-    
+
     &-hit  &__img-wrapper{
         &::before{
             $size:61px;

@@ -147,19 +147,74 @@ and open the template in the editor.
                     </div>
 
                 </div>
-
+                <div class="col-md-48">
+                    <ul class="breadcrambs">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="/catalog.html">Каталог</a></li>
+                        <li><a href="/catalog.html?group=creamy">Сливочное</a></li>
+                    </ul>
+                </div>
             </div>
 
         </header>
 
         <main class="main-content">
             <div class="container">
-                <div class="col-md-48 filter">
 
-                </div>
 
                 <div class="col-md-48 content good-wraper">
+
                     <div class="row">
+                        <div class="col-md-48 filter">
+                            <h1>Сливочное мороженое</h1>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-48 filter">
+                            <form action="">
+                                <div class="sort">
+                                    <p>Сортировка</p>
+                                    <select name="group" id="group">
+                                        <option value="">по умолчанию</option>
+                                        <option value="popular">по популярности</option>
+                                        <option value="price">По цене</option>
+                                    </select>
+                                </div>
+                                <div class="cost">
+                                    <p>Цена: <span class="cost__minimum"></span>руб. - <span class="cost__maximum"></span>руб. </p>
+                                    <div>
+                                    <input name="cost[minimum]" id="cost__minimum-input" type="text" value="0"/>
+                                    <input name="cost[maximum]" id="cost__maximum-input" type="text" value="750"/>
+                                    </div>
+                                </div>
+                                
+                                <div class="fatiness">
+                                    <p>Жирность</p>
+                                    <div class="fatiness__group">
+                                        <label for="fatiness-0"><input id="fatiness-0" name="fatiness" value="0" type="radio"></label>
+                                        <label for="fatiness-to-10"><input id="fatiness-to-10" name="fatiness" value="to-10" type="radio"></label>
+                                        <label for="fatiness-to-30"><input id="fatiness-to-30" name="fatiness" value="to-30" type="radio"></label>
+                                        <label for="fatiness-over-30"><input id="fatiness-over-30" name="fatiness" value="over-30" type="radio"></label>
+                                    </div>
+                                </div>
+                                <div class="type">
+                                    <p>Наполнители</p>
+                                    <div class="type__group">
+                                        <label for="type-shocolate"> <span>Шоколадные</span><input id="type-shocolate" name="type" type="checkbox" value="type[shocolate]"></label>
+                                        <label for="type-sugar"> <span>Шоколадные</span><input id="type-sugar" name="type" type="checkbox" value="type[sugar]"></label>
+                                        <label for="type-fruit"> <span>Шоколадные</span><input id="type-fruit" name="type" type="checkbox" value="type[fruit]"></label>
+                                        <label for="type-syrop"> <span>Шоколадные</span><input id="type-syrop" name="type" type="checkbox" value="type[syrop]"></label>
+                                        <label for="type-jam"> <span>Шоколадные</span><input id="type-jam" name="type-jam" type="checkbox" value="type[jam]"></label>
+                                    </div>
+                                </div>
+                                <div class=""><button class="btn filter__btn">Применить</button></div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+
 
                         <div class="col-md-12 good">
 
@@ -389,6 +444,7 @@ and open the template in the editor.
             </section>
             <script src='//code.jquery.com/jquery-3.3.1.min.js'></script>
             <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src='assets/js/lib/nouislider.min.js'></script>
             <script src='assets/js/script.js'></script>
 
         </footer>

@@ -25,9 +25,9 @@ gulp.task('css', function () {
             .pipe(sass({
                 includePaths: require('node-normalize-scss').includePaths
             })
-//            .on('error', function (error) {
-//                console.log(error);
-//            })
+            .on('error', function (error) {
+                console.log(error);
+            })
             )
             .pipe(cssBase64({
                 baseDir: "../images",//путь до папки с изображениями которые следует обрабатывать  , относительно директории sass/css

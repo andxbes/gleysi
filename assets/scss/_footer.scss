@@ -1,11 +1,25 @@
 .footer{
+    position: relative;
+    &:not(&--main):before{
+        content:"";
+        position: absolute;
+        width: 95%;
+        margin-left: -47.5%;
+        left: 50%;
+        top:0;
+        
+        border-top:1px solid rgba(255,255,255,.3);
+    }
+    &--main{
+      
+    }
 
 }
 .social-links{
-    margin: 36px 0;
+    margin: 36px 0 20px;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
         padding: 0 4px;
-        margin: 36px 0 20px;
+        
     }
     @media screen and (max-width: $grid-max-width-md){
         text-align:center;
@@ -23,7 +37,7 @@
         /*background-color: #e6ebe9;*/
         background-repeat: no-repeat;
         background-size: cover;
-        margin:0 7px 0 2px;
+        margin:0 6px 0 2px;
         opacity: 0.8;
         &:hover{
             opacity: 1;

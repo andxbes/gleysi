@@ -1111,7 +1111,7 @@ input[type="text"] {
     float: left; }
 
 @media screen and (min-width: 460px) {
-  .header-main {
+  .header--main {
     position: absolute;
     margin: auto;
     width: 100%; } }
@@ -1625,12 +1625,22 @@ and open the template in the editor.
 .catalog-content {
   padding-bottom: 40px; }
 
+.footer {
+  position: relative; }
+  .footer:not(.footer--main):before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    margin-left: -47.5%;
+    left: 50%;
+    top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); }
+
 .social-links {
-  margin: 36px 0; }
+  margin: 36px 0 20px; }
   @media screen and (max-width: 1200px) and (min-width: 900px) {
     .social-links {
-      padding: 0 4px;
-      margin: 36px 0 20px; } }
+      padding: 0 4px; } }
   @media screen and (max-width: 900px) {
     .social-links {
       text-align: center;
@@ -1646,7 +1656,7 @@ and open the template in the editor.
     /*background-color: #e6ebe9;*/
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 7px 0 2px;
+    margin: 0 6px 0 2px;
     opacity: 0.8; }
     .social-links a:hover {
       opacity: 1; }

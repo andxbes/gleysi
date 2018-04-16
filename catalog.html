@@ -172,22 +172,23 @@ and open the template in the editor.
                 <div class="col-md-48 content good-wraper">
 
                     <div class="row">
-                        <div class="col-md-48 filter">
+                        <div class="col-md-48">
                             <h1>Сливочное мороженое</h1>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-48 filter">
-                            <form action="">
-                                <div class="sort">
-                                    <p>Сортировка</p>
+                        <div class="col-md-36 filter">
+                            <form class="row" action="">
+                                <div class="col-md-12 sort">
+                                    <p>Сортировка:</p>
                                     <select name="group" id="group">
-                                        <option value="">по умолчанию</option>
                                         <option value="popular">по популярности</option>
-                                        <option value="price">По цене</option>
+                                        <option value="min-cost">сначала недорогие</option>
+                                        <option value="max-cost">сначала дорогие</option>
+                                        <option value="fatiness">по жирности</option>
                                     </select>
                                 </div>
-                                <div class="cost">
+                                <div class="col-md-12 cost">
                                     <p>Цена: <span class="cost__minimum"></span>руб. - <span class="cost__maximum"></span>руб. </p>
                                     <div>
                                         <input name="cost[minimum]" id="cost__minimum-input" type="text" value="0"/>
@@ -196,8 +197,8 @@ and open the template in the editor.
                                     <div id="cost-slider"></div>
                                 </div>
 
-                                <div class="fatiness">
-                                    <p>Жирность</p>
+                                <div class="col-md-24 fatiness">
+                                    <p>Жирность:</p>
                                     <div class="fatiness__group">
                                         <label for="fatiness-0"><input id="fatiness-0" name="fatiness" value="0" type="radio"></label>
                                         <label for="fatiness-to-10"><input id="fatiness-to-10" name="fatiness" value="to-10" type="radio"></label>
@@ -205,7 +206,7 @@ and open the template in the editor.
                                         <label for="fatiness-over-30"><input id="fatiness-over-30" name="fatiness" value="over-30" type="radio"></label>
                                     </div>
                                 </div>
-                                <div class="type">
+                                <div class="type col-md-39">
                                     <p>Наполнители</p>
                                     <div class="type__group">
                                         <label for="type-shocolate"> <span>Шоколадные</span><input id="type-shocolate" name="type" type="checkbox" value="type[shocolate]"></label>
@@ -215,7 +216,7 @@ and open the template in the editor.
                                         <label for="type-jam"> <span>Шоколадные</span><input id="type-jam" name="type-jam" type="checkbox" value="type[jam]"></label>
                                     </div>
                                 </div>
-                                <div class=""><button class="btn filter__btn">Применить</button></div>
+                                <div class="col-md-9"><button class="btn filter__btn">Применить</button></div>
                             </form>
                         </div>
                     </div>
@@ -450,9 +451,10 @@ and open the template in the editor.
                     <p>Сделано в HTML Academy © 2017</p>
                 </div>
             </section>
-            <script src='//code.jquery.com/jquery-3.3.1.min.js'></script>
-            <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+            <script src='/assets/js/lib/jquery-3.3.1.min.js'></script>
+            <!--<script src="/assets/js/lib/slick.min.js"></script>-->
             <script src='assets/js/lib/nouislider.min.js'></script>
+            <script src='assets/js/lib/jquery.nice-select.min.js'></script>
             <script src='assets/js/script.js'></script>
 
         </footer>

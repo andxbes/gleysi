@@ -1,12 +1,17 @@
 
 .header{
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     position: relative;
     z-index: 1;
 
     .logo{
+        line-height: 0;
         fill:white;
+        a{
+            display: inline-block;
+            
+        }
         &:hover{
             opacity: 0.8;
         }
@@ -20,7 +25,7 @@
         @media screen and (min-width:$grid-max-width-lg){
             padding-left: 12px;
         }
-        @media screen and (min-width:$grid-max-width-md){
+        @media screen and (min-width:$grid-max-width-md) and (max-width:$grid-max-width-lg){
             padding-left: 7px;
         }
         @media screen and (max-width:$grid-max-width-md ){
@@ -32,6 +37,9 @@
         &>*{
             margin: 12px 5px;
             float:left;
+        }
+        &>.cart{
+             margin: 12px 3px;
         }
     }
 
@@ -136,7 +144,7 @@
 }
 
 .contacts {
-    
+    margin-top: -2px;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
         margin-right: -7px;
     }

@@ -1,3 +1,4 @@
+@import "_price_interval.scss";
 @import "_slider.scss";
 @import "_banners.scss";
 @import "_good.scss";
@@ -5,3 +6,10 @@
 @import "_other.scss";
 @import "_map.scss";
 
+h1{
+    margin-top: 0;
+    font-size: 35px;
+    /*line-height: 41px;*/
+    /*word-spacing: 0;*/
+    letter-spacing: .005em;
+}

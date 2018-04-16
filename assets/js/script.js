@@ -40,7 +40,7 @@ jQuery(document).ready(function ($) {
                 var $container = $($maps[i]);
                 var positionData = $container.data('map-position');
                 var mapCenter = $container.data('map-center');
-                
+
                 var hintContent = $container.data('hint-content') == undefined ? "" : $container.data('hint-content');
 
                 var icon = {};
@@ -55,15 +55,15 @@ jQuery(document).ready(function ($) {
                 var address = $container.data('address');
                 if (positionData) {
                     var idconteiner = $container.attr('id');
-                    var targetCoords ={};
+                    var targetCoords = {};
                     targetCoords.pointer = positionData.split(",");
                     targetCoords.center = mapCenter ? mapCenter.split(",") : targetCoords.pointer;
-                    
+
                     addNextMap(idconteiner, targetCoords, address, hintContent, icon);
                 }
             }
         }
-        function addNextMap(idconteiner,targetCoords, address, hintContent, icon) {
+        function addNextMap(idconteiner, targetCoords, address, hintContent, icon) {
             ymaps.ready(function () {
                 var multiRoute = undefined;
                 var geolocation = ymaps.geolocation;
@@ -158,3 +158,17 @@ jQuery(document).ready(function ($) {
         });
     });
 }(jQuery));
+
+jQuery(document).ready(function ($) {
+    var costSlider = document.getElementById('cost-slider');
+
+    noUiSlider.create(costSlider, {
+        start: 10,
+        step: 10,
+        range: {
+            'min': 0,
+            'max': 100
+        }
+    });
+
+});

@@ -2214,7 +2214,8 @@ and open the template in the editor.
     Author     : Andrey
 */
 .filter {
-  padding-top: 14px; }
+  padding-top: 14px;
+  padding-bottom: 15px; }
 
 .sort, .cost, .fatiness, .type {
   /*padding-top: 14px;*/

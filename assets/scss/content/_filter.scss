@@ -88,8 +88,13 @@ and open the template in the editor.
 
 } 
 
-.filter__btn{
+.filter__submit{
+    padding-top: 23px;
+    
+}
 
+.filter__btn{
+    margin-left: 2px;
     @extend %button_white;
 
 }

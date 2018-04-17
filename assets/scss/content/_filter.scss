@@ -32,7 +32,7 @@ and open the template in the editor.
     p{
         margin-bottom: 5px;
         span{
-            
+
         }
         .cost__minimum{
             margin-right: 3px;
@@ -44,7 +44,7 @@ and open the template in the editor.
     input[type="number"]{
         display: none;
     }
-    
+
     .wraper{
         border-radius: 24px;
         background-color: rgba(255,255,255,.2);
@@ -57,72 +57,39 @@ and open the template in the editor.
         content:"\203E";
         display: inline-block;
         vertical-align: middle;
-        
+
     }
 }
 
 .fatiness{
-   
-    @extend .cost;
+
+    @extend .sort;
     padding-right:9px;
     p{
-       margin-bottom: 7px; 
+        margin-bottom: 7px; 
     }
-    label{
-        vertical-align: middle;
-        display: inline-block;
-        
-        &:not(:last-child){
-            margin-right:14px;
-        }
-        
-        &::before{
-            content: "";
-            display: inline-block;
-            vertical-align: top;
-            width: 22px;
-            height: 22px;
-            margin-right: 9px;
-            background-image: url(../images/radio-off.svg);
-            background-repeat: no-repeat;
-            
-        }
-    }
-    input:checked+label{
-        &::before{
-            background-image: url(../images/radio-on.svg);
-        }
-    }
-    
-    
+    @extend %radiobox;
+
     .wraper{
-        display: flex;
-        justify-content: space-around;
-        padding: 7px 14px 7px 12px;
         margin-left: 15px;
         margin-right: 13px;
     }
+
 }
 
 .type{
     @extend .fatiness;
-    label{
-        &::before{
-            width: 25px;
-            height: 21px;
-            background-image: url(../images/checkbox-off.svg); 
-        }
-    }
-    
-    input:checked+label{
-        &::before{
-            background-image: url(../images/checkbox-on.svg);
-            
-        }
-    }
+
+    @extend %checkbox;
     .wraper{
-          margin-right: 3px;   
-          padding-right: 15px;
+        margin-right: 3px;   
+        padding-right: 15px;
     }
+
 } 
 
+.filter__btn{
+
+    @extend %button_white;
+
+}

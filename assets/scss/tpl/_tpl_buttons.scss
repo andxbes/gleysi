@@ -27,8 +27,7 @@
             &:hover::before{
                 opacity: 1;
             }
-            &.disabled,
-            &:disabled{
+            &.disabled{
                 &::before{
                     opacity: .4;
                 }
@@ -39,6 +38,12 @@
         input:checked+label{
             &::before{
                 background-image: url(../images/radio-on.svg);
+            }
+        }
+        
+        input:disabled+label{
+            &::before{
+                opacity: .4;
             }
         }
 

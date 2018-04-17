@@ -490,11 +490,14 @@ and open the template in the editor.
     opacity: .8; }
   .type label:hover::before, .fatiness label:hover::before {
     opacity: 1; }
-  .type label.disabled::before, .fatiness label.disabled::before, .type label:disabled::before, .fatiness label:disabled::before {
+  .type label.disabled::before, .fatiness label.disabled::before {
     opacity: .4; }
 
 .type input:checked + label::before, .fatiness input:checked + label::before {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIGZpbGw9InJnYigyNTUsMjU1LDI1NSkiIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSJhdXRvIiB2aWV3Qm94PSIwIDAgMjUgMjUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDI1IDI1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwYXRoIGQ9Ik0xMi41LDRjNC42ODcsMCw4LjUsMy44MTMsOC41LDguNWMwLDQuNjg3LTMuODEzLDguNS04LjUsOC41QzcuODEzLDIxLDQsMTcuMTg3LDQsMTIuNUM0LDcuODEzLDcuODEzLDQsMTIuNSw0IE0xMi41LDAgIEM1LjU5NywwLDAsNS41OTcsMCwxMi41UzUuNTk3LDI1LDEyLjUsMjVTMjUsMTkuNDAzLDI1LDEyLjVTMTkuNDAzLDAsMTIuNSwwTDEyLjUsMHoiLz4NCjxjaXJjbGUgY3g9IjEyLjUiIGN5PSIxMi41IiByPSI0LjUiLz4NCjwvc3ZnPg==); }
+
+.type input:disabled + label::before, .fatiness input:disabled + label::before {
+  opacity: .4; }
 
 .type .wraper, .fatiness .wraper {
   display: -webkit-box;

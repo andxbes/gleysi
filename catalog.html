@@ -194,7 +194,7 @@ and open the template in the editor.
 
                                         <input name="cost[minimum]" min="0" max="750" step="10" id="cost__minimum-input" type="number" value="0"/>
                                         <input name="cost[maximum]" min="0" max="750" step="10" id="cost__maximum-input" type="number" value="750"/>
-                                        <div class="cost__wraper">
+                                        <div class="wraper">
                                             <div id="cost__slider" class="cost__slider"></div>
                                         </div>
                                     </div>
@@ -202,24 +202,39 @@ and open the template in the editor.
 
                                 <div class="col-md-24 fatiness">
                                     <p>Жирность:</p>
-                                    <div class="fatiness__group">
-                                        <label for="fatiness-0"><input id="fatiness-0" name="fatiness" value="0" type="radio"></label>
-                                        <label for="fatiness-to-10"><input id="fatiness-to-10" name="fatiness" value="to-10" type="radio"></label>
-                                        <label for="fatiness-to-30"><input id="fatiness-to-30" name="fatiness" value="to-30" type="radio"></label>
-                                        <label for="fatiness-over-30"><input id="fatiness-over-30" name="fatiness" value="over-30" type="radio"></label>
+                                    <div class="row">
+                                        <div class="wraper">
+                                            <input id="fatiness-0" name="fatiness" value="0" type="radio">
+                                            <label for="fatiness-0">0%</label>
+                                            <input id="fatiness-to-10" checked="" name="fatiness" value="to-10" type="radio">
+                                            <label for="fatiness-to-10">до 10%</label>
+                                            <input id="fatiness-to-30" name="fatiness" value="to-30" type="radio">
+                                            <label for="fatiness-to-30">до 30%</label>
+                                            <input id="fatiness-over-30" name="fatiness" value="over-30" type="radio">
+                                            <label for="fatiness-over-30">выше 30%</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="type col-md-39">
                                     <p>Наполнители</p>
-                                    <div class="type__group">
-                                        <label for="type-shocolate"> <span>Шоколадные</span><input id="type-shocolate" name="type" type="checkbox" value="type[shocolate]"></label>
-                                        <label for="type-sugar"> <span>Шоколадные</span><input id="type-sugar" name="type" type="checkbox" value="type[sugar]"></label>
-                                        <label for="type-fruit"> <span>Шоколадные</span><input id="type-fruit" name="type" type="checkbox" value="type[fruit]"></label>
-                                        <label for="type-syrop"> <span>Шоколадные</span><input id="type-syrop" name="type" type="checkbox" value="type[syrop]"></label>
-                                        <label for="type-jam"> <span>Шоколадные</span><input id="type-jam" name="type-jam" type="checkbox" value="type[jam]"></label>
+                                    <div class="row">
+                                        <div class="wraper">
+                                            <input id="type-shocolate" checked="" name="type" type="checkbox" value="type[shocolate]">
+                                            <label for="type-shocolate">шоколадные</label>
+                                            <input id="type-sugar" checked="" name="type" type="checkbox" value="type[sugar]">
+                                            <label for="type-sugar">сахарные присыпки</label>
+                                            <input id="type-fruit" name="type" type="checkbox" value="type[fruit]">
+                                            <label for="type-fruit">фрукты</label>
+                                            <input id="type-syrop" name="type" type="checkbox" value="type[syrop]">
+                                            <label for="type-syrop">сиропы</label>
+                                            <input id="type-jam" name="type-jam" type="checkbox" value="type[jam]">
+                                            <label for="type-jam">джемы</label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-9"><button class="btn filter__btn">Применить</button></div>
+                                <div class="col-md-9">
+                                    <button class="btn filter__btn">Применить</button>
+                                </div>
                             </form>
                         </div>
                     </div>

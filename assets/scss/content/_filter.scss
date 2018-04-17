@@ -22,6 +22,9 @@ and open the template in the editor.
         line-height: 16px;
         margin-bottom: 7px
     }
+    input{
+        display: none;
+    }
 }
 
 .cost{
@@ -42,7 +45,7 @@ and open the template in the editor.
         display: none;
     }
     
-    &__wraper{
+    .wraper{
         border-radius: 24px;
         background-color: rgba(255,255,255,.2);
         padding: 16px 20px;
@@ -59,9 +62,67 @@ and open the template in the editor.
 }
 
 .fatiness{
-    @extend .sort;
+   
+    @extend .cost;
+    padding-right:9px;
+    p{
+       margin-bottom: 7px; 
+    }
+    label{
+        vertical-align: middle;
+        display: inline-block;
+        
+        &:not(:last-child){
+            margin-right:14px;
+        }
+        
+        &::before{
+            content: "";
+            display: inline-block;
+            vertical-align: top;
+            width: 22px;
+            height: 22px;
+            margin-right: 9px;
+            background-image: url(../images/radio-off.svg);
+            background-repeat: no-repeat;
+            
+        }
+    }
+    input:checked+label{
+        &::before{
+            background-image: url(../images/radio-on.svg);
+        }
+    }
+    
+    
+    .wraper{
+        display: flex;
+        justify-content: space-around;
+        padding: 7px 14px 7px 12px;
+        margin-left: 15px;
+        margin-right: 13px;
+    }
 }
 
 .type{
-    @extend .sort;
+    @extend .fatiness;
+    label{
+        &::before{
+            width: 25px;
+            height: 21px;
+            background-image: url(../images/checkbox-off.svg); 
+        }
+    }
+    
+    input:checked+label{
+        &::before{
+            background-image: url(../images/checkbox-on.svg);
+            
+        }
+    }
+    .wraper{
+          margin-right: 3px;   
+          padding-right: 15px;
+    }
 } 
+

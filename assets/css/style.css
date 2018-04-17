@@ -1213,14 +1213,14 @@ input[type="text"] {
     display: inline-block;
     font-size: 14px;
     line-height: 16px; }
+    .breadcrambs li::after {
+      content: "\00BB";
+      display: inline-block;
+      margin: 0 2px 0 8px; }
     .breadcrambs li a {
       text-decoration: underline;
       -webkit-text-decoration-color: rgba(255, 255, 255, 0.2);
               text-decoration-color: rgba(255, 255, 255, 0.2); }
-      .breadcrambs li a::after {
-        content: "\00BB";
-        display: inline-block;
-        margin: 0 2px 0 8px; }
 
 .header {
   padding-top: 10px;

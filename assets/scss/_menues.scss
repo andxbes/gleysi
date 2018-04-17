@@ -5,8 +5,8 @@
 
     padding: 14px 6px 10px;
     @media screen and (min-width:$grid-max-width-md) and (max-width:$grid-max-width-lg){
-           padding: 14px 13px 10px;                                                                             
-        
+        padding: 14px 13px 10px;                                                                             
+
     }
 
     ul{
@@ -145,8 +145,8 @@
             }
         }
         &:hover,
-        &:active,
-        &:focus{
+            &:active,
+            &:focus{
             background-color: rgba(255,255,255,.2);
             a{
                 color: white;
@@ -171,12 +171,12 @@
         &:hover{
             opacity: .8;
         }
-        
+
     }
     .prev{
         @extend .next;
         transform: rotate(180deg);
-       
+
         margin: 0  $pagination-next-prev-margin 0 0;
     }
     .exist{
@@ -196,14 +196,15 @@
         display: inline-block;
         font-size: 14px;
         line-height: 16px;
+        &::after{
+            content: "\00BB";
+            display: inline-block;
+            margin: 0 2px 0 8px;
+        }
         a{
-           text-decoration: underline;
-           text-decoration-color: rgba(255, 255, 255, 0.2); 
-           &::after{
-               content: "\00BB";
-               display: inline-block;
-               margin: 0 2px 0 8px;
-           }
+            text-decoration: underline;
+            text-decoration-color: rgba(255, 255, 255, 0.2); 
+
         }
     }
 }

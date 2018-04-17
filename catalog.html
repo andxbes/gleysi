@@ -189,12 +189,15 @@ and open the template in the editor.
                                     </select>
                                 </div>
                                 <div class="col-md-12 cost">
-                                    <p>Цена: <span class="cost__minimum"></span>руб. - <span class="cost__maximum"></span>руб. </p>
-                                    <div>
-                                        <input name="cost[minimum]" id="cost__minimum-input" type="text" value="0"/>
-                                        <input name="cost[maximum]" id="cost__maximum-input" type="text" value="750"/>
+                                    <div class="row">
+                                        <p>Цена: <span class="cost__minimum"></span>руб.<span class="dush"></span><span class="cost__maximum"></span>руб. </p>
+
+                                        <input name="cost[minimum]" min="0" max="750" step="10" id="cost__minimum-input" type="number" value="0"/>
+                                        <input name="cost[maximum]" min="0" max="750" step="10" id="cost__maximum-input" type="number" value="750"/>
+                                        <div class="cost__wraper">
+                                            <div id="cost__slider" class="cost__slider"></div>
+                                        </div>
                                     </div>
-                                    <div id="cost-slider"></div>
                                 </div>
 
                                 <div class="col-md-24 fatiness">

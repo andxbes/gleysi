@@ -8,11 +8,60 @@ and open the template in the editor.
     Author     : Andrey
 */
 
+.filter{
+    padding-top: 14px;
+}
+
+
 .sort{
-    padding-top: 11px;
+    /*padding-top: 14px;*/
+    margin-bottom:15px;
     p{
         padding: 0 17px;
         font-size: 14px;
-        margin-bottom: 5px
+        line-height: 16px;
+        margin-bottom: 7px
     }
 }
+
+.cost{
+    @extend .sort;
+    p{
+        margin-bottom: 5px;
+        span{
+            
+        }
+        .cost__minimum{
+            margin-right: 3px;
+        }
+        .cost__maximum{
+            margin-right: 3px;
+        }
+    }
+    input[type="number"]{
+        display: none;
+    }
+    
+    &__wraper{
+        border-radius: 24px;
+        background-color: rgba(255,255,255,.2);
+        padding: 16px 20px;
+    }
+}
+.dush{
+    padding:0 7px 0 5px;
+    &:before{
+        content:"\203E";
+        display: inline-block;
+        vertical-align: middle;
+        
+    }
+}
+
+.fatiness{
+    @extend .sort;
+}
+
+.type{
+    @extend .sort;
+} 

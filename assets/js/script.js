@@ -162,16 +162,40 @@ jQuery(document).ready(function ($) {
 }(jQuery));
 
 jQuery(document).ready(function ($) {
-    var costSlider = document.getElementById('cost-slider');
+    var costSlider = $('#cost__slider');
+    var input_min_value = $("#cost__minimum-input");
+    var input_max_value = $("#cost__maximum-input");
+    
+    var $displayMax = $('.cost__maximum');
+    var $displayMin = $('.cost__minimum');
 
-    noUiSlider.create(costSlider, {
-        start: 10,
-        step: 10,
-        range: {
-            'min': 0,
-            'max': 100
-        }
-    });
+    if (costSlider.length > 0 && input_max_value.length > 0 && input_min_value.length > 0) {
+
+
+        noUiSlider.create(costSlider[0], {
+            start: [100, 500],
+            step: 10,
+            connect: true,
+            range: {
+                'min': 0,
+                'max': 750
+            }
+        });
+
+        costSlider[0].noUiSlider.on('update', function (values, handle) {
+
+            var value = Math.round(values[handle]);
+
+            if (handle) {
+                input_max_value[0].value = value;
+                $displayMax.text(value);
+            } else {
+                input_min_value[0].value = value;
+                $displayMin.text(value);
+            }
+        });
+    }
+
 
 });
 

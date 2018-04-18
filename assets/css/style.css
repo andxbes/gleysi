@@ -452,12 +452,12 @@ and open the template in the editor.
     Created on : 17.03.2018, 19:49:54
     Author     : Andrey
 */
-.container, .row, .header .user-block, .search form, .login form {
+.container, .row, .header .user-block, .search form, .login form, .cart form {
   *zoom: 1; }
-  .container:before, .row:before, .header .user-block:before, .search form:before, .login form:before, .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after {
+  .container:before, .row:before, .header .user-block:before, .search form:before, .login form:before, .cart form:before, .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after, .cart form:after {
     content: " ";
     display: table; }
-  .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after {
+  .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after, .cart form:after {
     clear: both; }
 
 /*
@@ -1258,25 +1258,25 @@ input[type="text"] {
     margin: auto;
     width: 100%; } }
 
-.search, .login,
+.search, .login, .cart,
 .login,
 .cart {
   position: relative; }
-  .search:hover .hidden, .login:hover .hidden,
+  .search:hover .hidden, .login:hover .hidden, .cart:hover .hidden,
   .login:hover .hidden,
   .cart:hover .hidden {
     display: block; }
 
-.search, .login {
+.search, .login, .cart {
   cursor: pointer;
   min-width: 32px; }
-  .search .hidden, .login .hidden {
+  .search .hidden, .login .hidden, .cart .hidden {
     position: absolute;
     top: 30px;
     right: 0px;
     z-index: 100;
     padding-top: 7px; }
-  .search form, .login form {
+  .search form, .login form, .cart form {
     z-index: 1000;
     width: 341px;
     padding: 0 15px;

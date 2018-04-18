@@ -119,6 +119,7 @@
 }
 
 .cart {
+    @extend .search;
     min-width: 117px;
     
     @media screen and (max-width:$grid-max-width-lg){

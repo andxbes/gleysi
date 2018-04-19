@@ -443,6 +443,9 @@ h2, .h2 {
 p {
   margin-bottom: 18px; }
 
+.light-grey {
+  color: #999999; }
+
 /*
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -452,12 +455,12 @@ and open the template in the editor.
     Created on : 17.03.2018, 19:49:54
     Author     : Andrey
 */
-.container, .row, .header .user-block, .search form, .login form, .cart form {
+.container, .row, .header .user-block, .search form, .login form, .cart form, .cart__item {
   *zoom: 1; }
-  .container:before, .row:before, .header .user-block:before, .search form:before, .login form:before, .cart form:before, .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after, .cart form:after {
+  .container:before, .row:before, .header .user-block:before, .search form:before, .login form:before, .cart form:before, .cart__item:before, .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after, .cart form:after, .cart__item:after {
     content: " ";
     display: table; }
-  .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after, .cart form:after {
+  .container:after, .row:after, .header .user-block:after, .search form:after, .login form:after, .cart form:after, .cart__item:after {
     clear: both; }
 
 /*
@@ -569,9 +572,13 @@ img {
 
 [class*='col-'] {
   float: left;
-  padding: 0 13px;
+  padding: 0;
   width: 100%;
   min-height: 1px; }
+
+[class*='col-']:not(.not-padding) {
+  padding-left: 13px;
+  padding-right: 13px; }
 
 .container {
   width: 100%;
@@ -1268,14 +1275,14 @@ input[type="text"] {
     display: block; }
 
 .search, .login, .cart {
-  cursor: pointer;
   min-width: 32px; }
   .search .hidden, .login .hidden, .cart .hidden {
     position: absolute;
     top: 30px;
     right: 0px;
     z-index: 100;
-    padding-top: 7px; }
+    padding-top: 7px;
+    color: #323232; }
   .search form, .login form, .cart form {
     z-index: 1000;
     width: 341px;
@@ -1286,6 +1293,11 @@ input[type="text"] {
             box-sizing: border-box;
     -webkit-box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
             box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4); }
+  .search > .text, .login > .text, .cart > .text,
+  .search > .ico,
+  .login > .ico,
+  .cart > .ico {
+    cursor: pointer; }
 
 .login {
   min-width: 94px; }
@@ -1309,12 +1321,55 @@ input[type="text"] {
   min-width: 117px; }
   .cart .ico__place {
     fill: transparent; }
-  .cart.cart-not-empty {
-    cursor: pointer; }
-    .cart.cart-not-empty .ico {
-      fill: #000; }
-    .cart.cart-not-empty .ico__place {
-      fill: #E84D37; }
+  .cart.cart-not-empty .ico {
+    fill: #000; }
+  .cart.cart-not-empty .ico__place {
+    fill: #E84D37; }
+  .cart .cart__form {
+    padding-top: 16px;
+    padding-bottom: 10px;
+    width: 541px;
+    font-size: 13px;
+    line-height: 16px; }
+  .cart__item {
+    padding-top: 4px;
+    margin-bottom: 16px; }
+    .cart__item > * {
+      float: left; }
+  .cart__delete {
+    width: 7.3%;
+    min-height: 30px;
+    background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNS4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxheWVyXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iMTFweCIgaGVpZ2h0PSIxMXB4IiB2aWV3Qm94PSIwIDAgMTEgMTEiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDExIDExIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxwb2x5Z29uIGZpbGw9IiMyMzFGMjAiIHBvaW50cz0iMTAuOTc5LDAuNzI4IDEwLjI3MSwwLjAyMSA1LjUsNC43OTIgMC43MjksMC4wMjEgMC4wMjEsMC43MjggNC43OTMsNS41IDAuMDIxLDEwLjI3MSAwLjcyOCwxMC45NzkgICA1LjUsNi4yMDcgMTAuMjcxLDEwLjk3OSAxMC45NzksMTAuMjcxIDYuMjA3LDUuNSAiLz4NCjwvc3ZnPg==);
+    background-repeat: no-repeat;
+    background-position: center; }
+  .cart .cart__text, .cart .cart__price--detail, .cart .cart__price--total-by-good {
+    display: inline-block;
+    padding-top: 8px; }
+  .cart__description {
+    position: relative;
+    width: 50%; }
+  .cart__image {
+    position: absolute;
+    width: 33px;
+    height: auto; }
+  .cart__text {
+    padding-left: 45px;
+    min-height: 33px;
+    vertical-align: top; }
+  .cart__price--detail {
+    width: 22%;
+    word-spacing: .03em; }
+  .cart__price--total-by-good {
+    width: 20%; }
+  .cart__total-price {
+    position: relative; }
+    .cart__total-price::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 13px;
+      right: 13px;
+      border-top: 1px solid #cacac7; }
 
 .contacts {
   margin-top: -2px;

@@ -65,7 +65,7 @@
 }
 
 .search{
-    cursor: pointer;
+    
     min-width: 32px;
     .hidden{
         position: absolute;
@@ -73,18 +73,22 @@
         right: 0px;
         z-index: 100;
         padding-top: 7px;
-
+        color:$color-text-grey;
 
     }
     form{
         @extend %clearfix;
         z-index: 1000;
         width: 341px;
-        padding: 0 15px;
+        padding: 0 ($grid-padding+2);
         background-color: $color-background-forms;
         border-radius: 5px;
         box-sizing: border-box;
         box-shadow: 0 20px 20px rgba(0,0,0,0.4);
+    }
+    &> .text,
+    &>.ico{
+        cursor: pointer;
     }
 }
 
@@ -132,7 +136,7 @@
 
     }
     &.cart-not-empty{
-        cursor: pointer;
+        
         .ico{
             fill: #000;
         }
@@ -140,6 +144,74 @@
         .ico__place{
             fill: #E84D37;
         }
+    }
+    
+    .cart__form{
+        padding-top: 16px;
+        padding-bottom: 10px;
+        width: 541px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &__item{
+        @extend %clearfix;
+        padding-top: 4px;
+        margin-bottom: 16px;
+        &>*{
+            float:left;
+        }
+ 
+    }
+    &__delete{
+        width: 7.3%;
+        min-height: 30px;
+        background-image: url(../images/x.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    $image-size:33px;
+    %text{
+        display: inline-block;
+        padding-top: 8px;
+    }
+    &__description{
+        position: relative;
+        width: 50%;
+    }
+    &__image{
+          position: absolute;
+          width: $image-size;
+          height: auto;
+    }
+    &__text{
+        @extend %text;
+        padding-left: 45px;
+        min-height: $image-size;
+      
+        vertical-align: top;
+    }
+    &__price--detail{
+        @extend %text;
+        width: 22%;
+        word-spacing: .03em;
+    }
+    &__price--total-by-good{
+        @extend %text;
+        width: 20%;
+    }
+    
+    &__total-price{
+        position:relative;
+        &::before{
+            content: "";
+           
+            position: absolute;
+            top:0;
+            left: $grid-padding;
+            right: $grid-padding;
+            border-top: 1px solid #cacac7;
+        }
+        
     }
 
 }

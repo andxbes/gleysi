@@ -39,8 +39,10 @@
             float:left;
         }
         &>.cart{
-             margin: 12px 3px;
+             margin: 12px 0px 12px 3px;
         }
+        
+        
     }
 
 }
@@ -201,17 +203,36 @@
     }
     
     &__total-price{
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: bold;
+        padding-top:15px;
+        padding-bottom:15px;
         position:relative;
+        
         &::before{
             content: "";
            
             position: absolute;
-            top:0;
+            top:1px;
             left: $grid-padding;
             right: $grid-padding;
             border-top: 1px solid #cacac7;
         }
         
+    }
+    &__submit{
+        font-size: 18px;
+        line-height: 24px;
+        .btn{
+            
+            padding: .5em .89em .67em .76em;
+            border-radius: 1.15em;
+            letter-spacing: -0.027em;
+            word-spacing: 0.1em;
+            margin-bottom: 10px;
+            
+        }
     }
 
 }

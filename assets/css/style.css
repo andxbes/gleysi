@@ -497,7 +497,8 @@ and open the template in the editor.
 .type label, .fatiness label {
   cursor: pointer;
   vertical-align: middle;
-  display: inline-block; }
+  display: inline-block;
+  margin: 7px 0; }
   .type label:not(:last-child), .fatiness label:not(:last-child) {
     margin-right: 14px; }
   .type label::before, .fatiness label::before {
@@ -529,7 +530,10 @@ and open the template in the editor.
   -webkit-justify-content: space-around;
       -ms-flex-pack: distribute;
           justify-content: space-around;
-  padding: 7px 14px 7px 12px;
+  padding: 0px 14px 0px 12px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   border-radius: 24px;
   background-color: rgba(255, 255, 255, 0.2); }
 
@@ -1839,7 +1843,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin-bottom: -53px; }
   @media screen and (max-width: 1200px) and (min-width: 900px) {
     .good {
-      margin-bottom: -53px; } }
+      margin-bottom: -48px; } }
 
 .good--hit {
   margin-bottom: -43px; }
@@ -1941,6 +1945,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .good-wraper {
   padding-bottom: 53px; }
+  @media screen and (max-width: 1200px) and (min-width: 900px) {
+    .good-wraper {
+      padding-bottom: 48px; } }
 
 /*.main-page{
     .hit__price{
@@ -2273,15 +2280,6 @@ and open the template in the editor.
 .no-csspointerevents .nice-select.open .list {
   display: block; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 16.04.2018, 20:51:56
-    Author     : Andrey
-*/
 .filter {
   padding-top: 14px;
   padding-bottom: 15px; }
@@ -2323,9 +2321,10 @@ and open the template in the editor.
   padding-right: 9px; }
   .fatiness p, .type p {
     margin-bottom: 7px; }
-  .fatiness .wraper, .type .wraper {
-    margin-left: 15px;
-    margin-right: 13px; }
+  @media screen and (min-width: 900px) {
+    .fatiness .wraper, .type .wraper {
+      margin-left: 15px;
+      margin-right: 13px; } }
 
 .type .wraper {
   margin-right: 3px;

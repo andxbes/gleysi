@@ -20,12 +20,10 @@ $good-margin: 53px;
 $hit-margin: 43px;
 
 .good{
-
-
     &{
         margin-bottom: -$good-margin;
         @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-            margin-bottom: - $good-margin;
+            margin-bottom: -($good-margin)+5;
         }
 
 
@@ -169,6 +167,9 @@ $hit-margin: 43px;
 
 .good-wraper{
     padding-bottom: $good-margin;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+             padding-bottom: ($good-margin)-5;
+        }
 }
 
 /*.main-page{

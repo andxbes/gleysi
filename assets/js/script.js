@@ -178,7 +178,7 @@ jQuery(document).ready(function ($) {
             connect: true,
             range: {
                 'min': 0,
-                'max': 750
+                'max': 800
             }
         });
 

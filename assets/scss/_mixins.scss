@@ -13,6 +13,7 @@ and open the template in the editor.
 }
 
 %clearfix {
+    position: relative;
     *zoom: 1;
     &:before, 
     &:after {

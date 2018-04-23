@@ -40,7 +40,7 @@ img {
     width: 100%;
     min-height: 1px; 
 }   
-[class*='col-']:not(.not-padding){
+[class*='col-']{
     padding-left: $grid-padding;
     padding-right: $grid-padding;
 }

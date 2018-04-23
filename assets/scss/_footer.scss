@@ -16,7 +16,7 @@
 
 }
 .social-links{
-    margin: 36px 0 20px;
+    margin: 37px 0 20px;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
         padding: 0 4px;
         
@@ -27,7 +27,7 @@
     }
 
     a{
-        $size: 37px;
+        $size: 38px;
         display: inline-block;
         width: $size;
         height: $size;
@@ -37,7 +37,7 @@
         /*background-color: #e6ebe9;*/
         background-repeat: no-repeat;
         background-size: cover;
-        margin:0 6px 0 2px;
+        margin:0 5px 0 2px;
         opacity: 0.8;
         &:hover{
             opacity: 1;

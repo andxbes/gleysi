@@ -33,7 +33,7 @@ $hit-margin: 43px;
     &--hit{
         margin-bottom:-$hit-margin;
         @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-            margin-bottom:-($hit-margin)-2;
+            margin-bottom:-($hit-margin)+1;
         }
     }
 

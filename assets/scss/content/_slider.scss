@@ -1,6 +1,6 @@
 $slider-bottom-underspice: 206px;
 .slider{
-  
+   position: relative;
 
     &__buttons{
         text-align: center;
@@ -11,7 +11,6 @@ $slider-bottom-underspice: 206px;
     }
     &__text{
         position: absolute;
-        /*        bottom: ($slider-bottom-underspice+40);*/
         top: 391px;
         width: 100%;
         @media screen and (max-width:$grid-max-width-md ){
@@ -26,6 +25,24 @@ $slider-bottom-underspice: 206px;
     &__item{
         text-align: center;
     }
+    $background-offset-top:65px;
+    &__wraper{
+        position: relative;
+        display: inline-block;
+        padding: (150px - $background-offset-top) 150px (150px + $background-offset-top);
+        background-image: radial-gradient(rgba(255,255,255,.5) 5%, rgba(255,255,255,0) 70%);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% (- $background-offset-top);
+        background-size: 100%;
+        margin-bottom: 20px;
+        box-sizing: border-box;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+             margin-bottom: 57px;
+        }
+    }
+    
+    
     &__title{
         font-size: 60px;
         font-weight: bold;
@@ -45,12 +62,11 @@ $slider-bottom-underspice: 206px;
     @media #{$breakpoint-md}{
 
         min-height: 887px;
-        margin-bottom: 20px;
         &  ~ .banners {
             position: absolute;
             left:0;
             right: 0;
-            top: 648px;
+            bottom: 0;
         }
     }
 
@@ -58,13 +74,12 @@ $slider-bottom-underspice: 206px;
 
 .slick-dots{
     position: absolute;
-    /*    bottom: ($slider-bottom-underspice+63);*/
     top: 564px;
-    margin-left: 14px;
+    margin-left: 27px;
     list-style: none;
     line-height:0;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-        margin-left: 7px;
+        margin-left: 20px;
         top: 563px;
     }
     @media screen and (max-width:$grid-max-width-md ){

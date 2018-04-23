@@ -9,11 +9,20 @@ and open the template in the editor.
 */
 
 %seo-image{
-    $size: 65px;
+    $size: 55px;
     display: inline-block;
     width: $size;
     height: $size;
+    box-sizing: border-box;
     background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: left top;
+    margin-right: 7px;
+    margin-left: 1px;
+    line-height: 0;
+    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+        margin-top: 1px;
+    }
 
 }
 
@@ -34,9 +43,10 @@ and open the template in the editor.
 
     &__title{
         display: inline-block;
+        margin-bottom: 11px;
         /*width: 90%;*/
         @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-            margin-bottom: 10px;
+            margin-bottom: 9px;
             margin-left: -4px;
         }
 

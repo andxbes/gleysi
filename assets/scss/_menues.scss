@@ -5,7 +5,7 @@
 
     padding: 14px 6px 10px;
     @media screen and (min-width:$grid-max-width-md) and (max-width:$grid-max-width-lg){
-        padding: 14px 13px 10px;                                                                             
+        padding: 14px 10px 10px;                                                                             
 
     }
 
@@ -123,6 +123,10 @@
     list-style: none;
     float:right;
     display: inline-block;
+    
+    @media screen and (min-width:$grid-max-width-md) and (max-width:$grid-max-width-lg){
+        margin: 3px 0 15px;
+    }
     &>*{
         display: flex;
         align-items: center;
@@ -135,7 +139,11 @@
         width: $size;
         height: $size;
         float: left;
-        margin-left: 3px;
+        
+        &:not(:nth-child(2)){
+            margin-left: 3px;
+        }
+        
 
 
         &.curent{

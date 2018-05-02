@@ -16,9 +16,10 @@
 
 }
 .social-links{
-    margin: 37px 0 20px;
+    margin: 38px 0 20px;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-        padding: 0 4px;
+        /*padding: 0 4px;*/
+        
         
     }
     @media screen and (max-width: $grid-max-width-md){
@@ -27,7 +28,7 @@
     }
 
     a{
-        $size: 38px;
+        $size: 37px;
         display: inline-block;
         width: $size;
         height: $size;
@@ -37,8 +38,13 @@
         /*background-color: #e6ebe9;*/
         background-repeat: no-repeat;
         background-size: cover;
-        margin:0 5px 0 2px;
+        margin:0 6px 0 2px;
         opacity: 0.8;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+             width: $size - 2;
+             height: $size - 2;
+             margin: 0 9px 0 1px;
+        }
         &:hover{
             opacity: 1;
         }
@@ -123,18 +129,31 @@
 }
 
 .copyright{
-    padding: 18px  0 0 4px ;
+    padding: 20px  0 0 0px ;
     font-size: 12px;
     line-height: 18px;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-        padding-left: 10px;
+        padding-left: 4px;
+        padding-top: 19px;
         margin-right: -$grid-padding;
+       
     }
     @media screen and (max-width: $grid-max-width-md){
         text-align: center;
     }
 
     img{
+        margin-left:5px;
         width: 112px;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+             width: 108px;
+        }
+    }
+    p{
+        text-align: right;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            text-align: left;
+            padding-left:2px;
+        }
     }
 }

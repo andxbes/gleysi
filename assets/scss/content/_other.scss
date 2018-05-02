@@ -19,7 +19,7 @@ and open the template in the editor.
     &>*{
         
         @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-            padding:0 ($grid-padding - 3px);
+            /*padding:0 ($grid-padding - 3px);*/
 
         }
     }

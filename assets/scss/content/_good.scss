@@ -1,29 +1,24 @@
+$good-margin: 54px;
+$hit-margin: 43px;
 
-
-
-
-.goods {
-    @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-        padding:0 ($grid-padding - 3);
-
-    }
-
+.goods-wraper{
+    padding-bottom: $good-margin;
+        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
+            padding-bottom:  ($good-margin - 5);
+        }
 }
 
-
-
-/**
-В шаблоне главной  одини отступы кнопок  , а во втором шаблоне уже другие  
-
-**/
-$good-margin: 53px;
-$hit-margin: 43px;
+.main-page{
+    .goods-wraper{
+        padding-bottom: 0;
+    }
+}
 
 .good{
     &{
         margin-bottom: -$good-margin;
         @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-            margin-bottom: -($good-margin)+5;
+            margin-bottom: -($good-margin)+1;
         }
 
 
@@ -165,12 +160,6 @@ $hit-margin: 43px;
     }
 }
 
-.good-wraper{
-    padding-bottom: $good-margin;
-        @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-             padding-bottom: ($good-margin)-5;
-        }
-}
 
 /*.main-page{
     .hit__price{

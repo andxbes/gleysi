@@ -12,13 +12,12 @@ and open the template in the editor.
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
-    <body class="body main-page">        
-        <header class="header header--main">
-            <div class="container">
+    <body class="body main-page">     
+        <div class="header--main">
+            <header class="header  container">
                 <div class="row">
-                    <div class="col-md-48">
-                        <div class="col-lg-7 col-md-9 col-sm-24 logo">
-
+                    <div class="col-lg-7 col-md-9 col-sm-24 ">
+                        <div class="row logo text-right">
                             <a href="/" title="На главную">
                                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="154px" height="64px" viewBox="0 0 154 64" enable-background="new 0 0 154 64" xml:space="preserve">
                                 <g>
@@ -31,323 +30,309 @@ and open the template in the editor.
                                 </g>
                                 </svg>
                             </a>
-
                         </div>
-
-                        <div class="col-lg-41 col-md-39 col-sm-24">
-                            <div class="row">
-                                <div class="col-lg-34 col-md-29">
-                                    <div class="row">
-                                        <nav class="head__navigation">
-                                            <ul class="menu">
-                                                <li class="">
-                                                    <a href="catalog.html">Каталог</a>
-                                                    <ul class="menu__sub">
-                                                        <li class="title" >
-                                                            <span class="text-bold">Новинки</span>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Сливочные</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Щербеты</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Фруктовый лед</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="#">Мелорин</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="#">Доставка и оплата</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#">О Компании</a>
-                                                </li>
-                                            </ul>
-                                        </nav>
-                                    </div>
+                    </div>
+                    <div class="col-lg-41 col-md-39 col-sm-24">
+                        <div class="row">
+                            <div class="col-lg-34 col-md-29">
+                                <div class="row">
+                                    <nav class="head__navigation">
+                                        <ul class="menu">
+                                            <li class="">
+                                                <a href="catalog.html">Каталог</a>
+                                                <ul class="menu__sub">
+                                                    <li class="title" >
+                                                        <span class="text-bold">Новинки</span>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Сливочные</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Щербеты</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Фруктовый лед</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">Мелорин</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#">Доставка и оплата</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">О Компании</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
                                 </div>
+                            </div>
 
-                                <div class="col-lg-14 col-md-19">
-                                    <div class="user-block row">
+                            <div class="col-lg-14 col-md-19">
+                                <div class="user-block row">
 
-                                        <div class="search c-btn">
-                                            <span class="ico">
-                                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
-                                                <path  d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5   S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2   S11,4.019,11,6.5S8.981,11,6.5,11z"/>
-                                                </svg>
-                                            </span>
-                                            <div class="hidden">
-                                                <form class="search__form" >
-                                                    <input type="text" name="s" value="" placeholder="Что ищем?">
-                                                    <!--<input type="submit">-->       
-                                                </form>
-                                            </div>
-                                        </div>
-                                        <div class="login c-btn--with-text">
-                                            <span class="ico">
-                                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
-                                                <g>
-                                                <polygon  points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959  "/>
-                                                <path  d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
-                                                </g>
-                                                </svg>
-                                            </span>
-                                            <span class="text">Вход</span>
-                                            <div class="hidden">
-                                                <form class="login__form " >
-                                                    <div class="col-sm-48">
-                                                        <input type="email" name="name" value="" placeholder="Электронная почта">
-                                                        <input type="password" name="pass" value="" placeholder="Пароль">
-                                                        <div class="row">
-                                                            <div class="col-sm-24">
-                                                                <button class="btn" type="submit">Войти</button>    
-                                                            </div>
-                                                            <div class="col-sm-24 login__another">
-                                                                <div class="row">
-                                                                    <a class="reverse" href="#">Забыли пароль?</a>
-                                                                    <a class="reverse" href="#">Новая регистрация</a>
-                                                                </div>
+                                    <div class="cart c-btn--with-text"> <!--cart-not-empty-->
+                                        <span class="ico">
+
+                                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                                            <polygon class="ico__place" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
+                                            <circle  cx="6.984" cy="18" r="2"/>
+                                            <circle  cx="15.984" cy="18" r="2"/>
+                                            <path  d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66  L17.372,13z"/>
+                                            </svg>
+                                        </span>
+                                        <span class="text">
+                                            Пусто&nbsp;
+                                        </span>
+                                    </div>
+
+                                    <div class="login c-btn--with-text">
+                                        <span class="ico">
+                                            <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="19px" viewBox="0 0 21 19" enable-background="new 0 0 21 19" xml:space="preserve">
+                                            <g>
+                                            <polygon  points="6,14.875 12.917,9.5 6,4.125 6,7.042 -0.042,7.042 -0.042,11.959 6,11.959  "/>
+                                            <path  d="M18,0H5C3.9,0,3,0.9,3,2v2h2V2h13v15H5v-2H3v2c0,1.1,0.9,2,2,2h13c1.1,0,2-0.9,2-2V2C20,0.9,19.1,0,18,0z"/>
+                                            </g>
+                                            </svg>
+                                        </span>
+                                        <span class="text">Вход</span>
+                                        <div class="hidden">
+                                            <form class="login__form " >
+                                                <div class="col-sm-48">
+                                                    <input type="email" name="name" value="" placeholder="Электронная почта">
+                                                    <input type="password" name="pass" value="" placeholder="Пароль">
+                                                    <div class="row">
+                                                        <div class="col-sm-24">
+                                                            <button class="btn" type="submit">Войти</button>    
+                                                        </div>
+                                                        <div class="col-sm-24 login__another">
+                                                            <div class="row">
+                                                                <a class="reverse" href="#">Забыли пароль?</a>
+                                                                <a class="reverse" href="#">Новая регистрация</a>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                </div>
 
-                                                </form>
-                                            </div>
+                                            </form>
                                         </div>
-                                        <div class="cart c-btn--with-text"> <!--cart-not-empty-->
-                                            <span class="ico">
+                                    </div>
 
-                                                <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
-                                                <polygon class="ico__place" points="5.888,4.031 6.922,13 17.372,13 18.548,4.031 "/>
-                                                <circle  cx="6.984" cy="18" r="2"/>
-                                                <circle  cx="15.984" cy="18" r="2"/>
-                                                <path  d="M5.657,2.031L5.422,0H0v2h3.64l1.5,13h13.988l1.699-12.969H5.657z M17.372,13H6.922L5.888,4.031h12.66  L17.372,13z"/>
-                                                </svg>
-                                            </span>
-                                            <span class="text">
-                                                Пусто&nbsp;
-                                            </span>
+                                    <div class="search c-btn">
+                                        <span class="ico">
+                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px" height="17px" viewBox="0 0 17 17" enable-background="new 0 0 17 17" xml:space="preserve">
+                                            <path  d="M16.958,15.527L11.75,10.32C12.533,9.247,13,7.93,13,6.5C13,2.91,10.09,0,6.5,0S0,2.91,0,6.5   S2.91,13,6.5,13c1.438,0,2.763-0.473,3.839-1.263l5.205,5.204L16.958,15.527z M6.5,11C4.019,11,2,8.981,2,6.5S4.019,2,6.5,2   S11,4.019,11,6.5S8.981,11,6.5,11z"/>
+                                            </svg>
+                                        </span>
+                                        <div class="hidden">
+                                            <form class="search__form" >
+                                                <input type="text" name="s" value="" placeholder="Что ищем?">
+                                                <!--<input type="submit">-->       
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
-
                         </div>
+
+
                     </div>
+
                 </div>
                 <div class="row">
-                    <div class="col-md-48">
-                        <div class="col-md-30">
-
-                        </div>
-
-                        <div class="contacts col-md-18 text-right">
-                            <p class="contacts__time">
-                                C 10 до 20, ежедневно
-                            </p>
-                            <a href="tel:88124502525" class="contacts__phone">8&nbsp;812&nbsp;450-25-25</a>
-                        </div>
-
+                    <div class="col-md-30"></div>
+                    <div class="contacts col-md-18 text-right">
+                        <p class="contacts__time">
+                            C 10 до 20, ежедневно
+                        </p>
+                        <a href="tel:88124502525" class="contacts__phone">8&nbsp;812&nbsp;450-25-25</a>
                     </div>
                 </div>
-            </div>
-
-        </header>
+            </header>
+        </div>
 
         <main class="main-content">
             <div class="container">
-                   <div class="row">
-                <div class="slider">
-                    <div class="slider__item active" data-background="#849d8f">
-                        <div class="slider__wraper">
-                            <img src="assets/images/slide-1.png" width="639" height="852" alt="slide1" class="slider__image" />
+                <div class="row">
+                    <div class="slider">
+                        <div class="slider__item active" data-background="#849d8f">
+                            <div class="slider__wraper">
+                                <img src="assets/images/slide-1.png" width="639" height="852" alt="slide1" class="slider__image" />
 
+                            </div>
+                            <div class="slider__text">
+                                <p class="slider__title">Крем-брюле и пломбир с малиновым джемом</p>
+                                <div class="slider__buttons">
+                                    <a href="#" class="btn">Давайте оба!</a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="slider__text">
-                            <p class="slider__title">Крем-брюле и пломбир с малиновым джемом</p>
-                            <div class="slider__buttons">
-                                <a href="#" class="btn">Давайте оба!</a>
+                        <div class="slider__item" data-background="#8996a6">
+                            <div class="slider__wraper">
+                                <img src="assets/images/slide-2.png" width="639" height="852" alt="slide2" class="slider__image"/>
+
+                            </div>
+                            <div class="slider__text">
+                                <p class="slider__title">Шоколадный пломбир и лимонный сорбет</p>
+                                <div class="slider__buttons">
+                                    <a href="#" class="btn">Давайте оба!</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item" data-background="#9d8b84">
+                            <div class="slider__wraper">
+                                <img src="assets/images/slide-3.png" width="639" height="852" alt="slide3" class="slider__image"/>
+
+                            </div>
+                            <div class="slider__text">
+                                <p class="slider__title">Пломбир с помадкой и клубничный щербет</p>
+                                <div class="slider__buttons">
+                                    <a href="#" class="btn">Давайте оба!</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slider__item" data-background="#8996a6">
-                        <div class="slider__wraper">
-                            <img src="assets/images/slide-2.png" width="639" height="852" alt="slide2" class="slider__image"/>
-
-                        </div>
-                        <div class="slider__text">
-                            <p class="slider__title">Шоколадный пломбир и лимонный сорбет</p>
-                            <div class="slider__buttons">
-                                <a href="#" class="btn">Давайте оба!</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slider__item" data-background="#9d8b84">
-                        <div class="slider__wraper">
-                            <img src="assets/images/slide-3.png" width="639" height="852" alt="slide3" class="slider__image"/>
-
-                        </div>
-                        <div class="slider__text">
-                            <p class="slider__title">Пломбир с помадкой и клубничный щербет</p>
-                            <div class="slider__buttons">
-                                <a href="#" class="btn">Давайте оба!</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-             
 
                     <section class="banners ">
                         <div class="container">
-                            <div class="col-md-24">
-                                <article class=" banner">
-                                    <figure>
-                                        <img src="assets/images/banner-1.jpg" width="560"  height="229" alt="banner1">
-                                    </figure>
-                                    <div class="banner__text">
-                                        <h2 class="banner__header">Малинка даром!</h2>
-                                        <div class="banner__description">
-                                            <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                            <div class="row">
+                                <div class="col-md-24">
+
+                                    <article class="banner banner--jam">
+                                        <div class="banner__text">
+                                            <h2 class="banner__header">Малинка даром!</h2>
+                                            <div class="banner__description">
+                                                <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
+                                                <p class="banner__buttons text-right">
+                                                    <a href="#" class="btn banner__btn">Хочу варенье!</a>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <a href="#" class="btn banner__btn">Хочу варенье!</a>
-                                </article>
-                            </div>
-                            <div class="col-md-24">
-                                <article class="banner">
-                                    <figure>
-                                        <img src="assets/images/banner-2.jpg" width="560"  height="229" alt="banner2">
-                                    </figure>
-                                    <div class="banner__text">
-                                        <h2 class="banner__header">Шоколадки даром!</h2>
-                                        <div class="banner__description">
-                                            <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+
+                                    </article>
+
+                                </div>
+                                <div class="col-md-24">
+
+                                    <article class="banner banner--chocolate">
+                                        <div class="banner__text">
+                                            <h2 class="banner__header">Шоколадки даром!</h2>
+                                            <div class="banner__description">
+                                                <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+                                                <p class="banner__buttons text-right">
+                                                    <a href="#" class="btn banner__btn">Хочу шоколадки!</a>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <a href="#" class="btn banner__btn">Хочу шоколадку!</a>
-                                </article>
+                                    </article>
+
+                                </div>
                             </div>
                         </div>
                     </section>
                 </div>
             </div>
 
-            <section class="goods  container">
-
-                <div class="col-md-12 good good--hit">
-
-                    <article class="row good__wraper">
-                        <div class="good__img-wrapper">
-                            <img width="267" height="267"  src="assets/images/ice-1-1.png" alt="good">
-                        </div>
-                        <p class="good__price">310<span class="currency rub">/кг</span></p> 
-                        <p class="good__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-                        <a href="#" class="btn good__btn">Быстрый просмотр</a>
-
-                    </article>
-
+            <section class="goods-wraper  container">
+                <div class="row">
+                    <div class="col-md-12 good good--hit">
+                        <article class="row good__wraper">
+                            <div class="good__img-wrapper">
+                                <img width="267" height="267"  src="assets/images/ice-1-1.png" alt="good">
+                            </div>
+                            <p class="good__price">310<span class="currency rub">/кг</span></p> 
+                            <p class="good__title">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+                            <a href="#" class="btn good__btn">Быстрый просмотр</a>
+                        </article>
+                    </div>
+                    <div class="col-md-12 good good--hit">
+                        <article class="row good__wraper">
+                            <div class="good__img-wrapper">
+                                <img  src="assets/images/ice-1-2.png" width="267" height="267" alt="good">
+                            </div>
+                            <p class="good__price">380<span class="currency rub">/кг</span></p> 
+                            <p class="good__title">Сливочно-кофейное с кусочками шоколада</p>
+                            <a href="#" class="btn good__btn">Быстрый просмотр</a>
+                        </article>
+                    </div>
+                    <div class="col-md-12 good good--hit">
+                        <article class="row good__wraper">
+                            <div class="good__img-wrapper">
+                                <img src="assets/images/ice-1-3.png" width="267" height="267" alt="good">
+                            </div>
+                            <p class="good__price">355<span class="currency rub">/кг</span></p> 
+                            <p class="good__title">Сливочно-клубничное с присыпкой из белого шоколада</p>
+                            <a href="#" class="btn good__btn">Быстрый просмотр</a>
+                        </article>
+                    </div>
+                    <div class="col-md-12 good good--hit">
+                        <article  class="row good__wraper">
+                            <div class="good__img-wrapper">
+                                <img src="assets/images/ice-1-4.png" width="267" height="267" alt="good">
+                            </div>
+                            <p class="good__price">415<span class="currency rub">/кг</span></p> 
+                            <p class="good__title">Сливочное крем-брюле с карамельной подливкой</p>
+                            <a href="#" class="btn good__btn">Быстрый просмотр</a>
+                        </article>
+                    </div>
                 </div>
-                <div class="col-md-12 good good--hit">
-
-                    <article class="row good__wraper">
-                        <div class="good__img-wrapper">
-                            <img  src="assets/images/ice-1-2.png" width="267" height="267" alt="good">
-                        </div>
-                        <p class="good__price">380<span class="currency rub">/кг</span></p> 
-                        <p class="good__title">Сливочно-кофейное с кусочками шоколада</p>
-                        <a href="#" class="btn good__btn">Быстрый просмотр</a>
-
-                    </article>
-
-                </div>
-                <div class="col-md-12 good good--hit">
-
-                    <article class="row good__wraper">
-                        <div class="good__img-wrapper">
-                            <img src="assets/images/ice-1-3.png" width="267" height="267" alt="good">
-                        </div>
-                        <p class="good__price">355<span class="currency rub">/кг</span></p> 
-                        <p class="good__title">Сливочно-клубничное с присыпкой из белого шоколада</p>
-                        <a href="#" class="btn good__btn">Быстрый просмотр</a>
-
-                    </article>
-
-                </div>
-                <div class="col-md-12 good good--hit">
-
-                    <article  class="row good__wraper">
-                        <div class="good__img-wrapper">
-                            <img src="assets/images/ice-1-4.png" width="267" height="267" alt="good">
-                        </div>
-                        <p class="good__price">415<span class="currency rub">/кг</span></p> 
-                        <p class="good__title">Сливочное крем-брюле с карамельной подливкой</p>
-                        <a href="#" class="btn good__btn">Быстрый просмотр</a>
-                    </article>
-
-                </div>
-
             </section>
-
-            <section class=" container">
-                <div class="col-md-48">
-                    <div class="seo">
-                        <h2 class="seo__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
-                        <div class="row">
-                            <div class="col-md-24 seo__item">
-                                <span class="seo__ice-cream"></span>
-                                <p class="seo__description ">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-                            </div>
-                            <div class="col-md-24 seo__item">
-                                <span class="seo__cow"></span>
-                                <p class="seo__description ">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-                            </div>
+            <section class="container">
+                <div class="seo">
+                    <h2 class="seo__title">Магазин Глейси — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
+                    <div class="row">
+                        <div class="col-md-24 seo__item">
+                            <span class="seo__ice-cream"></span>
+                            <p class="seo__description ">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
                         </div>
-                        <div class="row">
-                            <div class="col-md-24 seo__item">
-                                <span class="seo__leaf"></span>
-                                <p class="seo__description ">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
-                            </div>
-                            <div class="col-md-24 seo__item">
-                                <span class="seo__termometer"></span>
-                                <p class="seo__description ">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-                            </div>
+                        <div class="col-md-24 seo__item">
+                            <span class="seo__cow"></span>
+                            <p class="seo__description ">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-24 seo__item">
+                            <span class="seo__leaf"></span>
+                            <p class="seo__description ">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
+                        </div>
+                        <div class="col-md-24 seo__item">
+                            <span class="seo__termometer"></span>
+                            <p class="seo__description ">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="other container">
-
-                <div class="col-md-24">
-                    <div class="news">
-                        <figure>
-                            <img src="assets/images/news-1.jpg" alt="mews-img">
-                        </figure>
-                        <div class="news__text">
-                            <p class="news__subtitle">
-                                Новое в нашем блоге
-                            </p>
-                            <a href="#" class="news__title">
-                                10 способов сервировки фруктовых щербетов к столу
-                            </a>
+                <div class="row">
+                    <div class="col-md-24">
+                        <div class="news">
+                            <figure>
+                                <img src="assets/images/news-1.jpg" alt="mews-img">
+                            </figure>
+                            <div class="news__text">
+                                <p class="news__subtitle">
+                                    Новое в нашем блоге
+                                </p>
+                                <a href="#" class="news__title">
+                                    10 способов сервировки фруктовых щербетов к столу
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-24 ">
-                    <div class="subscribe">
-                        <form  class="subscribe__form">
-                            <p class="subscribe__attention">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
-                            <input class="subscribe__field subscribe__field-text" type="text" placeholder="Электронная почта">
-                            <button class="btn subscribe__field subscribe__btn" type="submit">Отправить</button>
-                        </form>
+                    <div class="col-md-24 subscribe">
+
+                        <div class="subscribe__wraper">
+                            <form  class="subscribe__form">
+                                <p class="subscribe__attention">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+                                <input class="subscribe__field subscribe__field-text" type="text" placeholder="Электронная почта">
+                                <button class="btn subscribe__field subscribe__btn" type="submit">Отправить</button>
+                            </form>
+                        </div>
+
                     </div>
                 </div>
-
             </section>
 
             <section class="map">
@@ -387,44 +372,45 @@ and open the template in the editor.
         </main>
 
         <footer class="container footer footer--main">
-            <section class="social-links col-lg-16 col-md-14">
-                <a href="#" class="social-links__tw"></a>
-                <a href="#" class="social-links__in"></a>
-                <a href="#" class="social-links__fb"></a>
-                <a href="#" class="social-links__vk"></a>
-            </section>
-            <section class="about-links col-lg-23 col-md-22">
-                <div class="row">
-                    <ul >
-                        <li class="active">
-                            <a href="#">Для поставщиков</a>
-                        </li>
-                        <li>
-                            <a href="#">О производстве</a>
-                        </li>
-                    </ul>
+            <div class="row">
+                <section class="social-links col-lg-16 col-md-14">
+                    <a href="#" class="social-links__tw"></a>
+                    <a href="#" class="social-links__in"></a>
+                    <a href="#" class="social-links__fb"></a>
+                    <a href="#" class="social-links__vk"></a>
+                </section>
+                <section class="about-links col-lg-23 col-md-22">
+                    <div class="row">
+                        <ul >
+                            <li class="active">
+                                <a href="#">Для поставщиков</a>
+                            </li>
+                            <li>
+                                <a href="#">О производстве</a>
+                            </li>
+                        </ul>
 
-                    <ul >
-                        <li>
-                            <a href="#">Наши документы</a>
-                        </li>
+                        <ul >
+                            <li>
+                                <a href="#">Наши документы</a>
+                            </li>
 
-                        <li>
-                            <a href="#">Экологические стандарты</a>
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <section class="col-lg-9 col-md-12">
-                <div class="copyright">
-                    <img src="assets/images/logo-html-academy.svg" alt="desigen-logo">
-                    <p>Сделано в HTML Academy © 2017</p>
-                </div>
-            </section>
+                            <li>
+                                <a href="#">Экологические стандарты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="col-lg-9 col-md-12">
+                    <div class="copyright">
+                        <img src="assets/images/logo-html-academy.svg" alt="desigen-logo">
+                        <p>Сделано в HTML Academy © 2017</p>
+                    </div>
+                </section>
+            </div>
             <script src='assets/js/lib/jquery-3.3.1.min.js'></script>
             <script src="assets/js/lib/slick.min.js"></script>
             <script src='assets/js/script.js'></script>
-
         </footer>
     </body>
 </html>

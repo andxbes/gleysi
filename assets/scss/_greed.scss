@@ -15,6 +15,7 @@ img {
     margin: 0 auto;
 }
 
+.container-fluid,
 .container{
     @extend %clearfix;
     padding-left: $grid-padding;
@@ -48,8 +49,9 @@ img {
 
 .container {      
     width: 100%;
-    margin: 0 auto;
-    max-width: $grid-max-width;     
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100vw;     
 }
 
 
@@ -63,8 +65,7 @@ img {
 @media #{$breakpoint-md} {
     
     .container {      
-       
-        max-width: $grid-max-width-md;     
+        max-width: ($grid-max-width-md - $grid-padding * 2); 
     }
 
     @for $i from 1 through $grid-columns {      
@@ -77,8 +78,7 @@ img {
 
 @media #{$breakpoint-lg} {
     .container {      
-       
-        max-width: $grid-max-width-lg;     
+       max-width: ($grid-max-width-lg - $grid-padding * 2);     
     }
     @for $i from 1 through $grid-columns {      
         .col-lg-#{$i} {         

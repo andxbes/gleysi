@@ -4,6 +4,8 @@
     padding-bottom: 8px;
     position: relative;
     z-index: 1;
+    
+    
 
     .logo{
         line-height: 0;
@@ -23,10 +25,10 @@
     .user-block{
         
         @media screen and (min-width:$grid-max-width-lg){
-            padding-left: 12px;
+            padding-right: 12px;
         }
         @media screen and (min-width:$grid-max-width-md) and (max-width:$grid-max-width-lg){
-            padding-left: 7px;
+            padding-right: 0px;
         }
         @media screen and (max-width:$grid-max-width-md ){
             display:none;
@@ -36,10 +38,13 @@
         @extend %clearfix;
         &>*{
             margin: 12px 5px;
-            float:left;
+            float:right;
         }
         &>.cart{
-             margin: 12px 0px 12px 3px;
+             margin: 12px 3px 12px 3px;
+             @media screen and (min-width:$grid-max-width-md) and (max-width:$grid-max-width-lg){
+                 margin: 12px 14px 12px 3px;
+             }
         }
         
         
@@ -49,9 +54,9 @@
 
 .header--main{
     @media screen and (min-width:$grid-max-width-sm){
-    position: absolute;
-    margin: auto;
-    width: 100%;   
+        position: absolute;
+        margin: auto;
+        width: 100%;   
     }
 }
 

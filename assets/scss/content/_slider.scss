@@ -61,7 +61,7 @@ $slider-bottom-underspice: 206px;
     }
     @media #{$breakpoint-md}{
 
-        min-height: 887px;
+        min-height: 906px;
         &  ~ .banners {
             position: absolute;
             left:0;
@@ -75,11 +75,11 @@ $slider-bottom-underspice: 206px;
 .slick-dots{
     position: absolute;
     top: 564px;
-    margin-left: 27px;
+    margin-left: 14px;
     list-style: none;
     line-height:0;
     @media screen and (max-width:$grid-max-width-lg) and (min-width:$grid-max-width-md){
-        margin-left: 20px;
+        margin-left: 13px;
         top: 563px;
     }
     @media screen and (max-width:$grid-max-width-md ){
